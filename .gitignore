@@ -9,4 +9,6 @@ yarn-error.log
 !/public/o
 !/public/favicon.ico
 !/public/og-image.jpg
+!/public/iframe-chatbot.html
+!/public/pricing.html
 .DS_Store
