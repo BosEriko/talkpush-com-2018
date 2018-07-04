@@ -4,5 +4,9 @@ node_modules
 yarn-error.log
 
 # Build directory
-/public
+!/public
+/public/*
+!/public/o
+!/public/favicon.ico
+!/public/og-image.jpg
 .DS_Store
