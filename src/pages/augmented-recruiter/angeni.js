@@ -1,10 +1,19 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
+const pageVariables = {
+  pageCode: 'angeni-augmented-recruiter',
+  pageDescription: 'Angeni Kirsten Miranda (Augmented Recruiter)',
+}
+
 const AugmentedRecruiterAngeni = () => (
   <div>
-    <Helmet title="Angeni"/>
-    <p>Augmented Recruiter - Angeni</p>
+    <Helmet>
+      <title>{pageVariables.pageCode}</title>
+      <meta name='description' content={pageVariables.pageDescription} />
+      <meta property='og:description' content={pageVariables.pageDescription} />
+    </Helmet>
+    <p>{pageVariables.pageDescription}</p>
   </div>
 )
 
