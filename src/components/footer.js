@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Footer = ({ title }) => (
-  <div style={{ textAlign: 'center' }}>
+  <div>
     <span>{title}</span> &copy; <span>{(new Date().getFullYear())}</span>
   </div>
 )
