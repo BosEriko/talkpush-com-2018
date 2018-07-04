@@ -1,8 +1,20 @@
 import React from 'react'
+import Helmet from 'react-helmet'
+
+const pageVariables = {
+  pageCode: 'jobs',
+  pageDescription: 'Ready to accelerate recruitment? Talkpush is the leading productivity platform and the most high-volume chatbot for hiring talent via Facebook, WeChat and messaging.',
+}
+
 
 const JobsPage = () => (
   <div>
-    jobs page
+    <Helmet>
+      <title>{pageVariables.pageCode}</title>
+      <meta name='description' content={pageVariables.pageDescription} />
+      <meta property='og:description' content={pageVariables.pageDescription} />
+    </Helmet>
+    <p>{pageVariables.pageDescription}</p>
   </div>
 )
 
