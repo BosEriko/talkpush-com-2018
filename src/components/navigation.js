@@ -4,11 +4,9 @@ import Helmet from 'react-helmet'
 import './style/header.scss'
 
 class Navigation extends React.Component {
-
   calendlyPopUp = () => {
     Calendly.showPopupWidget('https://calendly.com/talkpush-demo/talkpush-intro-demo/');
   }
-
   componentDidMount() {
     let servicesDropdownStatus = false;
     document.getElementById("servicesDropdownToggle").addEventListener("click", function(){
@@ -31,10 +29,9 @@ class Navigation extends React.Component {
       e.stopPropagation();
     });
   }
-
   render() {
     return (
-      <div className="menu">
+      <div className="menu" id="headerMenu">
         <Helmet>
           <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
           <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>

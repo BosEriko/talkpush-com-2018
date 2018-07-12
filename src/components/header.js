@@ -12,6 +12,16 @@ class Header extends React.Component {
         document.getElementById("header").classList.remove("active")
       }
     }
+    let menuButtonStatus = false;
+    document.getElementById("headerMenuButton").addEventListener("click", function(){
+      if(!menuButtonStatus){
+        document.getElementById("headerMenu").style.display = 'block'
+        menuButtonStatus = true
+      }else{
+        document.getElementById("headerMenu").style.display = 'none'
+        menuButtonStatus = false
+      }
+    })
   }
   render() {
     return (
@@ -22,7 +32,7 @@ class Header extends React.Component {
               <a className="logo" href="#top-section">
                 <span>{this.props.title} Logo</span>
               </a>
-              <a className="menu-button" href="#">
+              <a className="menu-button" id="headerMenuButton" href="#">
                 <i className="fa fa-bars" aria-hidden="true"></i>
               </a>
             </div>
