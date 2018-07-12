@@ -4,7 +4,8 @@ import Helmet from 'react-helmet'
 
 import Header from '../components/header'
 import Footer from '../components/footer'
-import './index.css'
+import './index.scss'
+import './global.scss'
 
 const facebookLiveChatScript = () => {
   if (typeof window !== 'undefined') {

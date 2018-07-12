@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 
 const Navigation = () => (
   <div>
-    {/* <ul style={{listStyleType: 'none'}}>
+    <ul style={{listStyleType: 'none'}}>
       <li><Link to="/augmented-recruiter/angeni">Angeni (AR)</Link></li>
       <li><Link to="/augmented-recruiter/ping">Ping (AR)</Link></li>
       <li><Link to="/augmented-recruiter/ram">Ram (AR)</Link></li>
@@ -19,7 +19,7 @@ const Navigation = () => (
       <li><Link to="/privacy-applicant">Privacy Applicant</Link></li>
       <li><Link to="/privacy">Privacy</Link></li>
       <li><Link to="/terms">Terms</Link></li>
-    </ul> */}
+    </ul>
   </div>
 )
 
