@@ -1,0 +1,37 @@
+// Colors
+$theme: #72de2f;
+
+// Breakpoints
+$break-smallest: 320px;
+$break-smaller: 481px;
+$break-small: 641px;
+$break-medium: 961px;
+$break-large: 1025px;
+$break-larger: 1281px;
+
+// Cross Browser Compatibility
+@mixin prefix($property, $value) {
+  -webkit-#{$property}: $value;
+  -moz-#{$property}: $value;
+  -ms-#{$property}: $value;
+  -o-#{$property}: $value;
+}
+
+// Flex Code Shortcut
+@mixin display-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin flex($value) {
+  -webkit-box-flex: $value;
+  -ms-flex: $value;
+  flex: $value;
+}
+
+@mixin align-items-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}

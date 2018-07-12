@@ -1,0 +1,285 @@
+@import '../../mixins/mixins';
+header {
+  @include prefix(transition, all 0.3s ease-in-out);
+
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 2;
+
+  @media screen and (min-width: $break-medium) {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  &.active,
+  &.fixed-active {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+
+    .divider {
+      .logo {
+        a.logo {
+          background-image: url(../../images/logo-black.png);
+          height: 40px;
+          margin: 15px 0;
+          width: 101px;
+        }
+      }
+
+      .menu {
+        > ul {
+          > li {
+            > a,
+            > span {
+              color: #444;
+
+              &:before {
+                background-color: #444;
+              }
+            }
+
+            &:last-child {
+              a {
+                @media screen and (min-width: $break-medium) {
+                  background-color: #555;
+                  border-color: rgba(0, 0, 0, 0.2);
+                }
+
+                &:hover,
+                &:focus {
+                  @media screen and (min-width: $break-medium) {
+                    background-color: #333;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .divider {
+    @media screen and (min-width: $break-medium) {
+      @include display-flex;
+      @include align-items-center;
+    }
+
+    .logo {
+      @include display-flex;
+      @include align-items-center;
+
+      a.logo {
+        @include prefix(transition, all 0.3s ease-in-out);
+
+        background-image: url(../../images/logo-black.png);
+        background-repeat: none;
+        background-size: cover;
+        display: inline-block;
+        height: 40px;
+        margin: 15px 0;
+        width: 101px;
+
+        @media screen and (min-width: $break-medium) {
+          background-image: url(../../images/logo-white.png);
+          height: 60px;
+          margin: 20px 0;
+          width: 152px;
+        }
+
+        span {
+          display: none;
+        }
+      }
+
+      a.menu-button {
+        @include flex(1);
+
+        font-size: 1.5rem;
+        margin-right: 20px;
+        text-align: right;
+
+        @include prefix(transition, color 0.3s ease-in-out);
+
+        @media screen and (min-width: $break-medium) {
+          display: none;
+        }
+
+        &:hover,
+        &:focus {
+          color: $theme;
+        }
+      }
+    }
+
+    .menu {
+      border-color: rgba(0, 0, 0, 0.1);
+      border-style: solid;
+      border-width: 1px 0 0 0;
+      display: none;
+      text-align: center;
+
+      @media screen and (min-width: $break-medium) {
+        @include flex(1);
+
+        border: none;
+        display: block !important;
+        text-align: right;
+      }
+
+      color: #fff;
+
+      > ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 10px;
+
+        > li {
+          display: block;
+          position: relative;
+
+          @media screen and (min-width: $break-medium) {
+            display: inline-block;
+            margin-right: 20px;
+          }
+
+          > ul {
+            display: none;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            overflow: hidden;
+
+            @media screen and (min-width: $break-medium) {
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+              text-align: left;
+              position: absolute;
+              border-radius: 5px;
+              background-color: #fff;
+              top: 60px;
+              left: 0;
+            }
+
+            > li {
+              margin: 0;
+              padding: 0;
+
+              > a {
+                text-decoration: none;
+                display: block;
+                padding: 10px;
+                overflow: hidden;
+
+                @include prefix(transition, all 0.1s ease-in-out);
+
+                @media screen and (min-width: $break-medium) {
+                  padding: 1rem;
+                }
+
+                &:hover,
+                &:focus {
+                  color: $theme;
+
+                  @media screen and (min-width: $break-medium) {
+                    color: #444;
+                    background-color: rgba(0, 0, 0, 0.15);
+                  }
+                }
+              }
+            }
+          }
+
+          i {
+            margin-left: 0.5rem;
+          }
+
+          > a,
+          > span {
+            color: #444;
+            display: block;
+            overflow: hidden;
+            padding: 10px;
+            position: relative;
+            text-decoration: none;
+            cursor: pointer;
+
+            @media screen and (min-width: $break-medium) {
+              @include prefix(transition, color 0.3s ease-in-out);
+
+              color: #fff;
+              display: inline-block;
+            }
+
+            &:before {
+              @media screen and (min-width: $break-medium) {
+                @include prefix(transform, scaleX(0));
+                @include prefix(transition, transform 0.3s ease-in-out);
+
+                background-color: #fff;
+                bottom: 0;
+                content: "";
+                height: 2px;
+                left: 0;
+                position: absolute;
+                width: 100%;
+              }
+            }
+
+            &:hover,
+            &:focus {
+              color: $theme;
+
+              &:before {
+                @include prefix(transform, scaleX(1));
+              }
+            }
+          }
+
+          &:last-child {
+            margin: 0;
+
+            a {
+              @media screen and (min-width: $break-medium) {
+                @include prefix(transition, background-color 0.3s ease-in-out);
+
+                background-color: rgba(255, 255, 255, 0.25);
+                border-color: rgba(0, 0, 0, 0.25);
+                border-style: solid;
+                border-width: 3px;
+                border-radius: 100px;
+                color: #fff;
+                padding: 10px 20px;
+                text-decoration: none;
+              }
+
+              &:before {
+                display: none;
+              }
+
+              &:hover,
+              &:focus {
+                @media screen and (min-width: $break-medium) {
+                  background-color: rgba(136, 201, 48, 0.75);
+                  color: #fff;
+                }
+              }
+
+              i {
+                display: none;
+                margin-right: 10px;
+
+                @media screen and (min-width: $break-medium) {
+                  display: inline;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
