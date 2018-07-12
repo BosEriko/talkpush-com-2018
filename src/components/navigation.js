@@ -4,9 +4,34 @@ import Helmet from 'react-helmet'
 import './style/header.scss'
 
 class Navigation extends React.Component {
+
   calendlyPopUp = () => {
     Calendly.showPopupWidget('https://calendly.com/talkpush-demo/talkpush-intro-demo/');
   }
+
+  componentDidMount() {
+    let servicesDropdownStatus = false;
+    document.getElementById("servicesDropdownToggle").addEventListener("click", function(){
+      if (!servicesDropdownStatus){
+        document.getElementById("servicesDropdownMenu").style.display = 'block'
+        servicesDropdownStatus = true
+      }else{
+        document.getElementById("servicesDropdownMenu").style.display = 'none'
+        servicesDropdownStatus = false
+      }
+    })
+    document.getElementsByTagName("body")[0].addEventListener("click", function(){
+      document.getElementById("servicesDropdownMenu").style.display = 'none'
+      servicesDropdownStatus = false
+    });
+    document.getElementById("servicesDropdownToggle").addEventListener("click", function(e){
+      e.stopPropagation();
+    });
+    document.getElementById("servicesDropdownMenu").addEventListener("click", function(e){
+      e.stopPropagation();
+    });
+  }
+
   render() {
     return (
       <div className="menu">
@@ -20,8 +45,8 @@ class Navigation extends React.Component {
           <li><Link to="/jobs">Career</Link></li>
           <li><Link to="/customers">Customers</Link></li>
           <li>
-            <span>Services<i className="fa fa-angle-down" aria-hidden="true"></i></span>
-            <ul>
+            <span id="servicesDropdownToggle">Services<i className="fa fa-angle-down" aria-hidden="true"></i></span>
+            <ul id="servicesDropdownMenu">
               <li><Link to="/crm">CRM</Link></li>
               <li><Link to="/chatbot">Chatbot</Link></li>
             </ul>
