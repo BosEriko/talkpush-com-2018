@@ -22,5 +22,11 @@ module.exports = {
         // exclude: ["/preview/**", "/do-not-track/me/too/"],
       },
     },
+    {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: '1690886631131130',
+      },
+    },
   ],
 }
