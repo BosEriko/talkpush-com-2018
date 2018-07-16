@@ -103,6 +103,7 @@ header {
         font-size: 1.5rem;
         margin-right: 20px;
         text-align: right;
+        color: #fff;
 
         @include prefix(transition, color 0.3s ease-in-out);
 
@@ -118,7 +119,7 @@ header {
     }
 
     .menu {
-      border-color: rgba(0, 0, 0, 0.1);
+      border-color: #fff;
       border-style: solid;
       border-width: 1px 0 0 0;
       display: none;
@@ -174,10 +175,12 @@ header {
                 display: block;
                 padding: 10px;
                 overflow: hidden;
+                color: #fff;
 
                 @include prefix(transition, all 0.1s ease-in-out);
 
                 @media screen and (min-width: $break-medium) {
+                  color: blue; // Temporary
                   padding: 1rem;
                 }
 
@@ -200,7 +203,7 @@ header {
 
           > a,
           > span {
-            color: #444;
+            color: #fff;
             display: block;
             overflow: hidden;
             padding: 10px;
