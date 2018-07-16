@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'gatsby-link'
 import Navigation from './navigation'
 import './style/header.scss'
 
@@ -29,9 +30,9 @@ class Header extends React.Component {
         <div className="container">
           <div className="divider">
             <div className="logo">
-              <a className="logo" href="#top-section">
+              <Link className="logo" to="/">
                 <span>{this.props.title} Logo</span>
-              </a>
+              </Link>
               <a className="menu-button" id="headerMenuButton" href="#">
                 <i className="fa fa-bars" aria-hidden="true"></i>
               </a>
