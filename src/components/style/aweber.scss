@@ -1,0 +1,48 @@
+@import '../../mixins/mixins';
+#af-form-565122839.af-form {
+  h4 {
+    font-weight: normal;
+    margin: 0;
+    padding: 0 0 10px 0;
+    text-transform: uppercase;
+  }
+
+  label.previewLabel {
+    color: #aaa;
+  }
+
+  #af-body-565122839.af-body.af-standards {
+    input.text {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.1);
+      border-radius: 3px;
+      border-style: solid;
+      border-width: 2px;
+      color: #fff;
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      width: 100%;
+    }
+
+    input.button {
+      @include prefix(transition, opacity 0.25s ease-in-out);
+
+      background-color: $theme;
+      border-color: rgba(0, 0, 0, 0.25);
+      border-radius: 3px;
+      border-style: solid;
+      border-width: 1px;
+      color: rgba(0, 0, 0, 0.75);
+      cursor: pointer;
+      display: block;
+      padding: 5px;
+      width: 100%;
+
+      &:hover,
+      &focus {
+        opacity: 0.85;
+      }
+    }
+  }
+}
