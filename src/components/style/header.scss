@@ -2,13 +2,14 @@
 header {
   @include prefix(transition, all 0.3s ease-in-out);
 
-  background-color: #fff;
+  background-color: $semi-black-75;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   left: 0;
   position: fixed;
   right: 0;
   top: 0;
   z-index: 2;
+  text-transform: lowercase;
 
   @media screen and (min-width: $break-medium) {
     background-color: transparent;
@@ -17,7 +18,7 @@ header {
 
   &.active,
   &.fixed-active {
-    background-color: #fff;
+    background-color: $semi-black-75;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 
     .divider {
@@ -35,24 +36,24 @@ header {
           > li {
             > a,
             > span {
-              color: #444;
+              color: #fff;
 
               &:before {
-                background-color: #444;
+                background-color: $theme;
               }
             }
 
             &:last-child {
               a {
                 @media screen and (min-width: $break-medium) {
-                  background-color: #555;
-                  border-color: rgba(0, 0, 0, 0.2);
+                  background-color: $semi-theme-25;
+                  border-color: $theme;
                 }
 
                 &:hover,
                 &:focus {
                   @media screen and (min-width: $break-medium) {
-                    background-color: #333;
+                    background-color: $semi-theme-50;
                   }
                 }
               }
@@ -219,7 +220,7 @@ header {
                 @include prefix(transform, scaleX(0));
                 @include prefix(transition, transform 0.3s ease-in-out);
 
-                background-color: #fff;
+                background-color: $theme;
                 bottom: 0;
                 content: "";
                 height: 2px;
@@ -246,11 +247,10 @@ header {
               @media screen and (min-width: $break-medium) {
                 @include prefix(transition, background-color 0.3s ease-in-out);
 
-                background-color: rgba(255, 255, 255, 0.25);
-                border-color: rgba(0, 0, 0, 0.25);
+                background-color: $semi-theme-25;
+                border-color: $theme;
                 border-style: solid;
-                border-width: 3px;
-                border-radius: 100px;
+                border-width: 2px;
                 color: #fff;
                 padding: 10px 20px;
                 text-decoration: none;
@@ -263,7 +263,7 @@ header {
               &:hover,
               &:focus {
                 @media screen and (min-width: $break-medium) {
-                  background-color: rgba(136, 201, 48, 0.75);
+                  background-color: $semi-theme-50;
                   color: #fff;
                 }
               }
