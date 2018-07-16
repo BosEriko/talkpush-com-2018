@@ -41,6 +41,10 @@ header {
               &:before {
                 background-color: $theme;
               }
+
+              &.activePage{
+                color: $theme;
+              }
             }
 
             &:last-child {
@@ -216,6 +220,10 @@ header {
 
               color: #fff;
               display: inline-block;
+
+              &.activePage{
+                color: $theme;
+              }
             }
 
             &:before {

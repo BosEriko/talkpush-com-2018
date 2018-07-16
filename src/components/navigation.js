@@ -37,15 +37,15 @@ class Navigation extends React.Component {
           <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
         </Helmet>
         <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About Us</Link></li>
-          <li><Link to="/jobs">Career</Link></li>
-          <li><Link to="/customers">Customers</Link></li>
+          <li><Link activeClassName="activePage" exact={true} to="/">Home</Link></li>
+          <li><Link activeClassName="activePage" to="/about">About Us</Link></li>
+          <li><Link activeClassName="activePage" to="/jobs">Career</Link></li>
+          <li><Link activeClassName="activePage" to="/customers">Customers</Link></li>
           <li>
             <span id="servicesDropdownToggle">Services<i className="fa fa-angle-down" aria-hidden="true"></i></span>
             <ul id="servicesDropdownMenu">
-              <li><Link to="/crm">CRM</Link></li>
-              <li><Link to="/chatbot">Chatbot</Link></li>
+              <li><Link activeClassName="activePage" to="/crm">CRM</Link></li>
+              <li><Link activeClassName="activePage" to="/chatbot">Chatbot</Link></li>
             </ul>
           </li>
           <li><a href="https://blog.talkpush.com/" target="_blank">Blog</a></li>
