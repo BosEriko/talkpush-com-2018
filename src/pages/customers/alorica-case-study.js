@@ -2,14 +2,12 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 const pageVariables = {
-  pageCode: 'index',
-  animationSpeed: '800',
-  animationOnce: 'true',
-  pageDescription: 'Ready to accelerate recruitment? Talkpush is the leading productivity platform and the most high-volume chatbot for hiring talent via Facebook, WeChat and messaging.',
+  pageCode: 'alorica-case-study',
+  pageDescription: 'Alorica\'s Case Study',
 }
 
-const IndexPage = () => (
-  <div style={{ height: '1000px' }}>
+const AboutPage = () => (
+  <div>
     <Helmet>
       <title>{pageVariables.pageCode}</title>
       <meta name='description' content={pageVariables.pageDescription} />
@@ -19,4 +17,4 @@ const IndexPage = () => (
   </div>
 )
 
-export default IndexPage
+export default AboutPage
