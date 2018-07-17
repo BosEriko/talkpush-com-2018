@@ -195,25 +195,57 @@ header {
             margin: 0;
             padding: 0;
             list-style-type: none;
-            overflow: hidden;
+
+            &:before{
+              @media screen and (min-width: $break-medium) {
+                content: "";
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                top: -20px;
+                left: 20px;
+                background-color: #000;
+                border-width: 1px;
+                border-style: solid;
+                border-color: $theme;
+                transform: rotate(45deg);
+                transform-origin: bottom left;
+                z-index: 1;
+                box-shadow: 0 0 10px $semi-theme-50;
+              }
+            }
 
             @media screen and (min-width: $break-medium) {
-              box-shadow: 0 0 10px $semi-theme-50, inset 0 0 10px $semi-theme-50;
+              opacity: .75;
+              box-shadow: 0 0 10px $semi-theme-50;
               text-align: center;
               position: absolute;
               border-radius: 5px;
-              background-color: $semi-black-75;
               top: 60px;
               left: 0;
               border-width: 1px;
               border-style: solid;
               border-color: $theme;
+              width: 200px;
             }
 
             > li {
               margin: 0;
               padding: 0;
               position: relative;
+              z-index: 2;
+
+              @media screen and (min-width: $break-medium) {
+                background-color: black;
+                &:first-child {
+                  border-top-right-radius: 5px;
+                  border-top-left-radius: 5px;
+                }
+                &:last-child {
+                  border-bottom-left-radius: 5px;
+                  border-bottom-right-radius: 5px;
+                }
+              }
 
               &:not(:last-child):before {
                 @media screen and (min-width: $break-medium) {
