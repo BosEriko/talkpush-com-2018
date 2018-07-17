@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Navigation from './navigation'
 import './style/header.scss'
+import MainLogo from '../images/logo.svg'
 
 class Header extends React.Component {
   componentDidMount() {
@@ -31,7 +32,7 @@ class Header extends React.Component {
           <div className="divider">
             <div className="logo">
               <Link className="logo" to="/">
-                <span>{this.props.title} Logo</span>
+                <img src={MainLogo} alt={this.props.title + " Logo"} title={this.props.title + " Logo"} />
               </Link>
               <a className="menu-button" id="headerMenuButton" href="#">
                 <i className="fa fa-bars" aria-hidden="true"></i>
