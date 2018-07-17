@@ -249,6 +249,10 @@ header {
                 @include prefix(transform, scaleX(1));
               }
             }
+
+            &.activePage {
+              color: $theme;
+            }
           }
 
           &:last-child {
