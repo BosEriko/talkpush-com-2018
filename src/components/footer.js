@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import './style/footer.scss'
 import './style/aweber.scss'
+import FooterLogo from '../images/logo-neon.svg'
 
 const Footer = ({ title }) => (
     <footer>
@@ -10,17 +11,20 @@ const Footer = ({ title }) => (
                 <div className="section bigger">
                     <h4>About {title}</h4>
                     <p>Talkpush is making volume hiring fun and personal again. Talkpush is a recruitment platform that leverages the power of messaging and social media. The solution consists of Stanley, a recruitment chatbot compatible with Facebook and WeChat, which conducts interviews and an application management tool, which allows recruiters to evaluate and hire candidates faster than ever before.</p>
+                    <div className="footer-logo">
+                        <img src={FooterLogo} alt="Footer Logo" />
+                    </div>
                 </div>
                 <div className="section">
                     <h4>Contact Details</h4>
                     <ul>
-                        <li><i className="fa fa-send fa-fw" aria-hidden="true"></i>hello@talkpush.com</li>
-                        <li><i className="fa fa-hashtag fa-fw" aria-hidden="true"></i>+(852) 9188 7562 &mdash;<strong>&nbsp;HK</strong></li>
-                        <li><i className="fa fa-hashtag fa-fw" aria-hidden="true"></i>+(63) 917 5075734 &mdash;<strong>&nbsp;PH</strong></li>
-                        <li><i className="fa fa-hashtag fa-fw" aria-hidden="true"></i>+(33) 7 82 96 83 16 &mdash;<strong>&nbsp;FR</strong></li>
-                        <li><i className="fa fa-hashtag fa-fw" aria-hidden="true"></i>+(44) 7751 860193 &mdash;<strong>&nbsp;UK</strong></li>
-                        <li><i className="fa fa-hashtag fa-fw" aria-hidden="true"></i>+(1) 415 818 5083 &mdash;<strong>&nbsp;US</strong></li>
-                        <li><i className="fa fa-hashtag fa-fw" aria-hidden="true"></i>+(91) 99108 94942 &mdash;<strong>&nbsp;IN</strong></li>
+                        <li><i className="fa fa-send fa-fw" aria-hidden="true"></i><a href="mailto:hello@talkpush.com">hello@talkpush.com</a></li>
+                        <li><i className="fa fa-hashtag fa-fw" aria-hidden="true"></i>+(852) 9188 7562 &mdash;<strong>&nbsp;<span className="country-code">HK</span></strong></li>
+                        <li><i className="fa fa-hashtag fa-fw" aria-hidden="true"></i>+(63) 917 5075734 &mdash;<strong>&nbsp;<span className="country-code">PH</span></strong></li>
+                        <li><i className="fa fa-hashtag fa-fw" aria-hidden="true"></i>+(33) 7 82 96 83 16 &mdash;<strong>&nbsp;<span className="country-code">FR</span></strong></li>
+                        <li><i className="fa fa-hashtag fa-fw" aria-hidden="true"></i>+(44) 7751 860193 &mdash;<strong>&nbsp;<span className="country-code">UK</span></strong></li>
+                        <li><i className="fa fa-hashtag fa-fw" aria-hidden="true"></i>+(1) 415 818 5083 &mdash;<strong>&nbsp;<span className="country-code">US</span></strong></li>
+                        <li><i className="fa fa-hashtag fa-fw" aria-hidden="true"></i>+(91) 99108 94942 &mdash;<strong>&nbsp;<span className="country-code">IN</span></strong></li>
                     </ul>
                 </div>
                 <div className="section">
