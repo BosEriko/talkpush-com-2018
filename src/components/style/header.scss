@@ -233,12 +233,11 @@ header {
                 display: block;
                 padding: 10px;
                 overflow: hidden;
-                color: #fff;
 
                 @include prefix(transition, all 0.1s ease-in-out);
 
                 @media screen and (min-width: $break-medium) {
-                  color: #fff;
+                  color: $theme;
                   padding: 1rem;
                 }
 
@@ -281,6 +280,7 @@ header {
                 @include prefix(transform, scaleX(0));
                 @include prefix(transition, transform 0.3s ease-in-out);
 
+                box-shadow: 0 3px 10px $semi-theme-50;
                 background-color: $theme;
                 bottom: 0;
                 content: "";
