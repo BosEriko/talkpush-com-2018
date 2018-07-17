@@ -40,6 +40,7 @@ header {
 
               &:before {
                 background-color: $theme;
+                box-shadow: 0 3px 10px $semi-theme-50;
               }
 
               &.activePage{
@@ -109,7 +110,7 @@ header {
         text-align: right;
         color: #fff;
 
-        @include prefix(transition, color 0.3s ease-in-out);
+        @include prefix(transition, all 0.3s ease-in-out);
 
         @media screen and (min-width: $break-medium) {
           display: none;
@@ -184,13 +185,14 @@ header {
                 @include prefix(transition, all 0.1s ease-in-out);
 
                 @media screen and (min-width: $break-medium) {
-                  color: blue; // Temporary
+                  color: #444;
                   padding: 1rem;
                 }
 
                 &:hover,
                 &:focus {
-                  color: $theme;
+                  color: #fff;
+                  text-shadow: 0 0 10px #ac50b5;
 
                   @media screen and (min-width: $break-medium) {
                     color: #444;
@@ -209,14 +211,13 @@ header {
           > span {
             color: #fff;
             display: block;
-            overflow: hidden;
             padding: 10px;
             position: relative;
             text-decoration: none;
             cursor: pointer;
 
             @media screen and (min-width: $break-medium) {
-              @include prefix(transition, color 0.3s ease-in-out);
+              @include prefix(transition, all 0.3s ease-in-out);
 
               color: #fff;
               display: inline-block;
@@ -243,7 +244,8 @@ header {
 
             &:hover,
             &:focus {
-              color: $theme;
+              color: #fff;
+              text-shadow: 0 0 10px #ac50b5;
 
               &:before {
                 @include prefix(transform, scaleX(1));
@@ -252,6 +254,10 @@ header {
 
             &.activePage {
               color: $theme;
+              &:hover,
+              &:focus {
+                text-shadow: 0 0 10px $semi-theme-50;
+              }
             }
           }
 
