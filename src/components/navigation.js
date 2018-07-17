@@ -8,26 +8,34 @@ class Navigation extends React.Component {
     Calendly.showPopupWidget('https://calendly.com/talkpush-demo/talkpush-intro-demo/');
   }
   componentDidMount() {
-    let servicesDropdownStatus = false;
-    document.getElementById("servicesDropdownToggle").addEventListener("click", function(){
-      if (!servicesDropdownStatus){
-        document.getElementById("servicesDropdownMenu").style.display = 'block'
-        servicesDropdownStatus = true
-      }else{
-        document.getElementById("servicesDropdownMenu").style.display = 'none'
-        servicesDropdownStatus = false
-      }
-    })
-    document.getElementsByTagName("body")[0].addEventListener("click", function(){
-      document.getElementById("servicesDropdownMenu").style.display = 'none'
-      servicesDropdownStatus = false
-    });
-    document.getElementById("servicesDropdownToggle").addEventListener("click", function(e){
-      e.stopPropagation();
-    });
-    document.getElementById("servicesDropdownMenu").addEventListener("click", function(e){
-      e.stopPropagation();
-    });
+    let dropdownStatus = {}
+    const dropdown = function(id) {
+      dropdownStatus[id] = false
+      let dropdownMenu = document.getElementById(id + "DropdownMenu")
+      let dropdownToggle = document.getElementById(id + "DropdownToggle")
+      let body = document.getElementsByTagName("body")[0]
+      dropdownToggle.addEventListener("click", function(){
+        if (!dropdownStatus[id]){
+          dropdownMenu.style.display = 'block'
+          dropdownStatus[id] = true
+        }else{
+          dropdownMenu.style.display = 'none'
+          dropdownStatus[id] = false
+        }
+      })
+      body.addEventListener("click", function(){
+        dropdownMenu.style.display = 'none'
+        dropdownStatus[id] = false
+      });
+      dropdownToggle.addEventListener("click", function(e){
+        e.stopPropagation();
+      });
+      dropdownMenu.addEventListener("click", function(e){
+        e.stopPropagation();
+      });
+    }
+    dropdown("about");
+    dropdown("services");
   }
   render() {
     return (
@@ -38,7 +46,12 @@ class Navigation extends React.Component {
         </Helmet>
         <ul>
           <li><Link activeClassName="activePage" exact={true} to="/">Home</Link></li>
-          <li><Link activeClassName="activePage" to="/about">About Us</Link></li>
+          <li>
+            <span id="aboutDropdownToggle">About<i className="fa fa-angle-down" aria-hidden="true"></i></span>
+            <ul id="aboutDropdownMenu">
+              <li><Link activeClassName="activePage" to="/about">About Us</Link></li>
+            </ul>
+          </li>
           <li><Link activeClassName="activePage" to="/jobs">Career</Link></li>
           <li><Link activeClassName="activePage" to="/customers">Customers</Link></li>
           <li>

@@ -233,6 +233,7 @@ header {
                 display: block;
                 padding: 10px;
                 overflow: hidden;
+                color: #fff;
 
                 @include prefix(transition, all 0.1s ease-in-out);
 
