@@ -3,7 +3,10 @@ header {
   @include prefix(transition, all 0.3s ease-in-out);
 
   background-color: $semi-black-75;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 10px $semi-theme-50;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: $theme;
   left: 0;
   position: fixed;
   right: 0;
@@ -14,12 +17,16 @@ header {
   @media screen and (min-width: $break-medium) {
     background-color: transparent;
     box-shadow: none;
+    border-width: 0;
   }
 
   &.active,
   &.fixed-active {
     background-color: $semi-black-75;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 10px $semi-theme-50;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: $theme;
 
     .divider {
       .logo {
@@ -41,10 +48,6 @@ header {
               &:before {
                 background-color: $theme;
                 box-shadow: 0 3px 10px $semi-theme-50;
-              }
-
-              &.activePage{
-                color: $theme;
               }
             }
 
@@ -162,18 +165,35 @@ header {
             overflow: hidden;
 
             @media screen and (min-width: $break-medium) {
-              box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-              text-align: left;
+              box-shadow: 0 0 10px $semi-theme-50, inset 0 0 10px $semi-theme-50;
+              text-align: center;
               position: absolute;
               border-radius: 5px;
-              background-color: #fff;
+              background-color: $semi-black-75;
               top: 60px;
               left: 0;
+              border-width: 1px;
+              border-style: solid;
+              border-color: $theme;
             }
 
             > li {
               margin: 0;
               padding: 0;
+              position: relative;
+
+              &:not(:last-child):before {
+                @media screen and (min-width: $break-medium) {
+                  content: "";
+                  background-color: white;
+                  position: absolute;
+                  left: 0;
+                  bottom: 0;
+                  right: 0;
+                  height: 1px;
+                  margin: 0 10px;
+                }
+              }
 
               > a {
                 text-decoration: none;
@@ -185,7 +205,7 @@ header {
                 @include prefix(transition, all 0.1s ease-in-out);
 
                 @media screen and (min-width: $break-medium) {
-                  color: #444;
+                  color: #fff;
                   padding: 1rem;
                 }
 
@@ -195,8 +215,7 @@ header {
                   text-shadow: 0 0 10px #ac50b5;
 
                   @media screen and (min-width: $break-medium) {
-                    color: #444;
-                    background-color: rgba(0, 0, 0, 0.15);
+                    color: #fff;
                   }
                 }
               }
@@ -222,9 +241,6 @@ header {
               color: #fff;
               display: inline-block;
 
-              &.activePage{
-                color: $theme;
-              }
             }
 
             &:before {
@@ -254,9 +270,9 @@ header {
 
             &.activePage {
               color: $theme;
-              &:hover,
-              &:focus {
-                text-shadow: 0 0 10px $semi-theme-50;
+              text-shadow: 0 0 10px $semi-theme-50;
+              &:before {
+                @include prefix(transform, scaleX(1));
               }
             }
           }
