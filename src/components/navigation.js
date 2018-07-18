@@ -3,6 +3,9 @@ import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import './style/header.scss'
 
+import crmIcon from '../icons/crm.svg'
+import chatbotIcon from '../icons/chatbot.svg'
+
 class Navigation extends React.Component {
   calendlyPopUp = () => {
     Calendly.showPopupWidget('https://calendly.com/talkpush-demo/talkpush-intro-demo/');
@@ -49,7 +52,10 @@ class Navigation extends React.Component {
           <li>
             <span id="aboutDropdownToggle">About<i className="fa fa-angle-down" aria-hidden="true"></i></span>
             <ul id="aboutDropdownMenu">
-              <li><Link activeClassName="activePage" to="/about">About Us</Link></li>
+              <li><Link activeClassName="activePage" to="/about">Our Style</Link></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Join Our Team</a></li>
+              <li><a href="#">Gallery</a></li>
             </ul>
           </li>
           <li><Link activeClassName="activePage" to="/jobs">Career</Link></li>
@@ -57,8 +63,8 @@ class Navigation extends React.Component {
           <li>
             <span id="servicesDropdownToggle">Services<i className="fa fa-angle-down" aria-hidden="true"></i></span>
             <ul id="servicesDropdownMenu">
-              <li><Link activeClassName="activePage" to="/crm">CRM</Link></li>
-              <li><Link activeClassName="activePage" to="/chatbot">Chatbot</Link></li>
+              <li><Link activeClassName="activePage" to="/crm"><img src={crmIcon} alt="CRM" />CRM</Link></li>
+              <li><Link activeClassName="activePage" to="/chatbot"><img src={chatbotIcon} alt="Chatbot" />Chatbot</Link></li>
             </ul>
           </li>
           <li><a href="https://blog.talkpush.com/" target="_blank">Blog</a></li>

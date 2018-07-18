@@ -274,6 +274,12 @@ header {
                   padding: 1rem;
                 }
 
+                img {
+                  vertical-align: bottom;
+                  height: 16px;
+                  padding-right: 10px;
+                }
+
                 &:hover,
                 &:focus {
                   color: #fff;
