@@ -283,7 +283,7 @@ header {
                 &:hover,
                 &:focus {
                   color: #fff;
-                  text-shadow: 0 0 10px #ac50b5;
+                  text-shadow: 0 0 10px $purple;
 
                   @media screen and (min-width: $break-medium) {
                     color: #fff;
@@ -333,7 +333,7 @@ header {
             &:hover,
             &:focus {
               color: #fff;
-              text-shadow: 0 0 10px #ac50b5;
+              text-shadow: 0 0 10px $purple;
 
               &:before {
                 @include prefix(transform, scaleX(1));
