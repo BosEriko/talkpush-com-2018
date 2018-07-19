@@ -45,3 +45,33 @@ a:hover {
   padding: 0 10px;
   width: 100%;
 }
+
+.global-button {
+  color: #fff;
+  text-decoration: none;
+  border-width: 2px;
+  border-style: solid;
+  border-color: $theme;
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
+  @include prefix(transition, all 0.3s ease-in-out);
+
+  &-block {
+    min-width: 200px;
+  }
+
+  &:focus,
+  &:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #ac50b5;
+    background-color: $semi-theme-10;
+    box-shadow: 0 0 10px $semi-theme-50, inset 0 0 10px $semi-theme-50;
+  }
+
+  &:active{
+    text-shadow: none;
+    background-color: $theme;
+    box-shadow: 0 0 10px $semi-theme-75;
+  }
+}

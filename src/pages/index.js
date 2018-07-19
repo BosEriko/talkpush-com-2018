@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import TalkToYourCandidateIndexPageSplit from '../pages-split/index/talk-to-your-candidate'
 
 const pageVariables = {
   pageCode: 'index',
@@ -9,13 +10,15 @@ const pageVariables = {
 }
 
 const IndexPage = () => (
-  <div style={{ height: '1000px' }}>
+  <div>
     <Helmet>
       <title>{pageVariables.pageCode}</title>
       <meta name='description' content={pageVariables.pageDescription} />
       <meta property='og:description' content={pageVariables.pageDescription} />
     </Helmet>
-    <p>{pageVariables.pageDescription}</p>
+    <div>
+      <TalkToYourCandidateIndexPageSplit />
+    </div>
   </div>
 )
 
