@@ -1,23 +1,23 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 @import '../../mixins/mixins';
 
 // Global Style
 :root {
-  font-size: 14px;
+  font-size: 12px;
   transition: font-size 0.3s 0s ease-in-out;
   -webkit-transition: font-size 0.3s 0s ease-in-out;
 
   @media screen and (min-width: $break-smaller) {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   @media screen and (min-width: $break-medium) {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   @media screen and (min-width: $break-larger) {
-    font-size: 17px;
+    font-size: 15px;
   }
 }
 
