@@ -54,12 +54,12 @@ a:hover {
     &-glow {
       &-white {
         color: #fff;
-        text-shadow: 0 0 20px $purple;
+        text-shadow: 0 0 10px $purple;
       }
 
       &-green {
         color: $theme;
-        text-shadow: 0 0 20px $semi-theme-50;
+        text-shadow: 0 0 10px $semi-theme-50;
       }
     }
   }
@@ -94,4 +94,17 @@ a:hover {
       box-shadow: 0 0 10px $semi-theme-75;
     }
   }
+}
+
+// Utilities
+.m-0 {
+  margin: 0;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
 }

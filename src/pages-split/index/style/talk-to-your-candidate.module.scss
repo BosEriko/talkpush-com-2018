@@ -3,4 +3,46 @@
     height: 100vh;
     background-color: #000;
     color: #fff;
+    @include display-flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/background.jpg);
+}
+
+.fill {
+    &Left {
+        @include flex(1);
+        background-color: $semi-black-75;
+    }
+    &Right {
+        @include flex(1);
+    }
+}
+.content {
+    width: 980px;
+    @include display-flex;
+    &Left {
+        background-color: $semi-black-75;
+        max-width: 450px;
+        width: 100%;
+        @include display-flex;
+        @include align-items-center;
+        &Content{
+            @include flex(1);
+            h1 {
+                font-size: 4rem;
+                line-height: 4.2rem;
+                font-weight: 100;
+            }
+            p {
+                color: #999;
+                padding: 30px 30px 30px 0;
+                margin: 0;
+            }
+        }
+    }
+    &Right {
+        @include flex(1);
+    }
 }
