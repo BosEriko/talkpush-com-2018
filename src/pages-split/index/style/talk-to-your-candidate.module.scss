@@ -1,37 +1,51 @@
 @import '../../../mixins/mixins';
 .block {
-    height: 100vh;
     background-color: #000;
     color: #fff;
-    @include display-flex;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-image: url(../images/background.jpg);
+    @media screen and (min-width: $break-medium) {
+        @include display-flex;
+        height: 100vh;
+    }
 }
 
 .fill {
-    &Left {
-        @include flex(1);
-        background-color: $semi-black-75;
-    }
-    &Right {
-        @include flex(1);
+    @media screen and (min-width: $break-medium) {
+        &Left {
+            @include flex(1);
+            background-color: $semi-black-75;
+        }
+        &Right {
+            @include flex(1);
+        }
     }
 }
 .content {
-    width: 980px;
+    @media screen and (min-width: $break-medium) {
+        max-width: 980px;
+        width: 100%;
+    }
 
     @include display-flex;
     &Left {
         background-color: $semi-black-75;
-        max-width: 500px;
-        width: 100%;
+        padding: 7.5rem 0;
         @include display-flex;
         @include align-items-center;
+        @media screen and (min-width: $break-medium) {
+            width: 100%;
+            max-width: 500px;
+            padding: 0;
+        }
         &Content{
             @include flex(1);
-            padding-right: 2rem;
+            padding: 2rem;
+            @media screen and (min-width: $break-medium) {
+                padding: 0 2rem 0 0;
+            }
             h1 {
                 font-size: 4rem;
                 line-height: 4.2rem;
@@ -45,7 +59,9 @@
         }
     }
     &Right {
-        @include flex(1);
+        @media screen and (min-width: $break-medium) {
+            @include flex(1);
+        }
     }
 }
 .bigButtonHolder {
@@ -64,16 +80,27 @@
     }
 }
 .otherButtonHolder {
-    @include display-flex;
     text-transform: lowercase;
+    @media screen and (min-width: $break-medium) {
+        @include display-flex;
+    }
     a {
-        @include flex(1);
+        display: block;
         background-color: rgba(255, 255, 255, .25);
+        @media screen and (min-width: $break-medium) {
+            @include flex(1);
+        }
         &:nth-child(1) {
-            margin-right: .5rem;
+            margin-bottom: 2rem;
+            @media screen and (min-width: $break-medium) {
+                margin-right: .5rem;
+                margin-bottom: 0;
+            }
         }
         &:nth-child(2) {
-            margin-left: .5rem;
+            @media screen and (min-width: $break-medium) {
+                margin-left: .5rem;
+            }
         }
         &:hover,
         &:focus {
