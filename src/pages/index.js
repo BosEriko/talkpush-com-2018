@@ -1,6 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import TalkToYourCandidateIndexPageSplit from '../pages-split/index/talk-to-your-candidate'
+import CrmIndexPageSplit from '../pages-split/index/crm'
 
 const pageVariables = {
   pageCode: 'index',
@@ -18,6 +19,7 @@ const IndexPage = () => (
     </Helmet>
     <div>
       <TalkToYourCandidateIndexPageSplit />
+      <CrmIndexPageSplit />
     </div>
   </div>
 )
