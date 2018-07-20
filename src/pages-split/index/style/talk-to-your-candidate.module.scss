@@ -21,15 +21,17 @@
 }
 .content {
     width: 980px;
+
     @include display-flex;
     &Left {
         background-color: $semi-black-75;
-        max-width: 450px;
+        max-width: 500px;
         width: 100%;
         @include display-flex;
         @include align-items-center;
         &Content{
             @include flex(1);
+            padding-right: 2rem;
             h1 {
                 font-size: 4rem;
                 line-height: 4.2rem;
@@ -37,12 +39,51 @@
             }
             p {
                 color: #999;
-                padding: 30px 30px 30px 0;
                 margin: 0;
+                padding: 2rem 0;
             }
         }
     }
     &Right {
         @include flex(1);
+    }
+}
+.bigButtonHolder {
+    text-transform: lowercase;
+    padding-bottom: 2rem;
+    a {
+        background-color: $semi-theme-25;
+        display: block;
+        &:hover,
+        &:focus {
+            background-color: $semi-theme-50;
+        }
+    }
+    i {
+        margin-right: .5rem;
+    }
+}
+.otherButtonHolder {
+    @include display-flex;
+    text-transform: lowercase;
+    a {
+        @include flex(1);
+        background-color: rgba(255, 255, 255, .25);
+        &:nth-child(1) {
+            margin-right: .5rem;
+        }
+        &:nth-child(2) {
+            margin-left: .5rem;
+        }
+        &:hover,
+        &:focus {
+            background-color: rgba(255, 255, 255, .5);
+        }
+    }
+    img {
+        vertical-align: bottom;
+        height: 1rem;
+        line-height: 1rem;
+        margin-right: .5rem;
     }
 }
