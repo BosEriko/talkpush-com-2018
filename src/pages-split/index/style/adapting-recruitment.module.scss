@@ -1,4 +1,9 @@
 @import '../../../mixins/mixins';
 .block {
-    color: pink;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000;
+    background-image: url(../../../images/grid-bg.png);
+    color: #fff;
 }
