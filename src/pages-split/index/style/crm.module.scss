@@ -40,7 +40,6 @@
             &Laptop {
                 &Inactive {
                     z-index: 1;
-                    left: 1rem;
                     // For Inactive Only
                     opacity: .5;
                     // Status
@@ -54,7 +53,6 @@
                 }
                 &Active {
                     z-index: 2;
-                    left: 1rem;
                     // Display Status
                     display: none;
                     @media screen and (min-width: $break-medium) {
@@ -68,7 +66,6 @@
             &Mobile {
                 &Inactive {
                     z-index: 1;
-                    right: 1rem;
                     // For Inactive Only
                     opacity: .5;
                     // Display Status
@@ -81,7 +78,6 @@
                 }
                 &Active {
                     z-index: 2;
-                    right: 1rem;
                     // Display Status
                     display: inline-block;
                     @media screen and (min-width: $break-medium) {
