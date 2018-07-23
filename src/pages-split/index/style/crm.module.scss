@@ -1,15 +1,19 @@
 @import '../../../mixins/mixins';
 .block {
-    display: block;
     background-color: #000;
     color: #fff;
     &Divider {
-        @include display-flex;
-        @include align-items-center;
+        padding: 3rem 0;
+        @media screen and (min-width: $break-medium) {
+            @include display-flex;
+            @include align-items-center;
+            padding: 5rem 0;
+        }
         &Left,
         &Right {
-            @include flex(1);
-            margin: 5rem 0;
+            @media screen and (min-width: $break-medium) {
+                @include flex(1);
+            }
             h2 {
                 font-size: 3rem;
                 line-height: 4rem;
@@ -21,43 +25,75 @@
             }
         }
         &Left {
-            height: 30rem;
+            z-index: 1;
             position: relative;
             overflow: hidden;
-            &Laptop {
-                // display: none;
-                bottom: 50%;
-                left: 5rem;
-                position: absolute;
-                width: 75%;
-                opacity: .5;
-                transform: translateY(50%);
-                &Active {
-                    display: none;
-                    bottom: 50%;
-                    left: 5rem;
+            @media screen and (min-width: $break-medium) {
+                height: 30rem;
+            }
+            img {
+                max-width: 100%;
+                max-height: 100%;
+                @media screen and (min-width: $break-medium) {
                     position: absolute;
-                    width: 75%;
-                    transform: translateY(50%);
+                }
+            }
+            &Laptop {
+                &Inactive {
+                    z-index: 1;
+                    // For Inactive Only
+                    opacity: .5;
+                    // Status
+                    display: inline-block;
+                    @media screen and (min-width: $break-medium) {
+                        bottom: 50%;
+                        transform: translateY(50%);
+                        left: 5rem;
+                        width: 75%;
+                    }
+                }
+                &Active {
+                    z-index: 2;
+                    // Display Status
+                    display: none;
+                    @media screen and (min-width: $break-medium) {
+                        bottom: 50%;
+                        transform: translateY(50%);
+                        left: 5rem;
+                        width: 75%;
+                    }
                 }
             }
             &Mobile {
-                display: none;
-                bottom: 0;
-                left: 2rem;
-                position: absolute;
-                height: 100%;
-                opacity: .5;
+                &Inactive {
+                    z-index: 1;
+                    // For Inactive Only
+                    opacity: .5;
+                    // Display Status
+                    display: none;
+                    @media screen and (min-width: $break-medium) {
+                        bottom: 0;
+                        left: 2rem;
+                        height: 100%;
+                    }
+                }
                 &Active {
-                    // display: none;
-                    bottom: 0;
-                    left: 2rem;
-                    position: absolute;
-                    height: 100%;
+                    z-index: 2;
+                    // Display Status
+                    display: inline-block;
+                    @media screen and (min-width: $break-medium) {
+                        bottom: 0;
+                        left: 2rem;
+                        height: 100%;
+                    }
                 }
             }
         }
         &Right {
+            padding: 2rem;
+            @media screen and (min-width: $break-medium) {
+                padding: 0;
+            }
             &ToggleButton {
                 display: inline-block;
                 ul {
