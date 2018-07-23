@@ -15,19 +15,19 @@ class CrmIndexPageSplit extends React.Component {
     const blockWebActive      = document.getElementById("index-page-crm-block-laptop-active")
     const blockWebInactive    = document.getElementById("index-page-crm-block-laptop-inactive")
     mobileToggle.addEventListener("click", function(e){
-      blockMobileActive.setAttribute("style", "display: block;")
+      blockMobileActive.setAttribute("style", "display: inline-block;")
       blockMobileInactive.setAttribute("style", "display: none;")
       blockWebActive.setAttribute("style", "display: none;")
-      blockWebInactive.setAttribute("style", "display: block;")
+      blockWebInactive.setAttribute("style", "display: inline-block;")
       mobileToggle.classList.add("active")
       webToggle.classList.remove("active")
       e.stopPropagation();
     })
     webToggle.addEventListener("click", function(e){
-      blockWebActive.setAttribute("style", "display: block;")
+      blockWebActive.setAttribute("style", "display: inline-block;")
       blockWebInactive.setAttribute("style", "display: none;")
       blockMobileActive.setAttribute("style", "display: none;")
-      blockMobileInactive.setAttribute("style", "display: block;")
+      blockMobileInactive.setAttribute("style", "display: inline-block;")
       webToggle.classList.add("active")
       mobileToggle.classList.remove("active")
       e.stopPropagation();
