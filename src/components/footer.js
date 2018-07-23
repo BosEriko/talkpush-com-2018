@@ -24,7 +24,7 @@ const Footer = ({ title }) => (
                         <li><i className="fa fa-hashtag fa-fw" aria-hidden="true"></i>+(33) 7 82 96 83 16 &mdash;<strong>&nbsp;<span className="country-code">FR</span></strong></li>
                         <li><i className="fa fa-hashtag fa-fw" aria-hidden="true"></i>+(44) 7751 860193 &mdash;<strong>&nbsp;<span className="country-code">UK</span></strong></li>
                         <li><i className="fa fa-hashtag fa-fw" aria-hidden="true"></i>+(1) 415 818 5083 &mdash;<strong>&nbsp;<span className="country-code">US</span></strong></li>
-                        <li><i className="fa fa-hashtag fa-fw" aria-hidden="true"></i>+(91) 99108 94942 &mdash;<strong>&nbsp;<span className="country-code">IN</span></strong></li>
+                        <li><i className="fa fa-hashtag fa-fw" aria-hidden="true"></i>+(91) 96503 49306 &mdash;<strong>&nbsp;<span className="country-code">IN</span></strong></li>
                     </ul>
                 </div>
                 <div className="section">
