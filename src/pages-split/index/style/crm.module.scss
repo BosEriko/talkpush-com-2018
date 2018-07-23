@@ -9,7 +9,7 @@
         &Left,
         &Right {
             @include flex(1);
-            padding: 2rem 0;
+            margin: 5rem 0;
             h2 {
                 font-size: 3rem;
                 line-height: 4rem;
@@ -18,6 +18,43 @@
             p {
                 margin: 0;
                 padding: 1.5rem 0;
+            }
+        }
+        &Left {
+            height: 30rem;
+            position: relative;
+            overflow: hidden;
+            &Laptop {
+                // display: none;
+                bottom: 50%;
+                left: 5rem;
+                position: absolute;
+                width: 75%;
+                opacity: .5;
+                transform: translateY(50%);
+                &Active {
+                    display: none;
+                    bottom: 50%;
+                    left: 5rem;
+                    position: absolute;
+                    width: 75%;
+                    transform: translateY(50%);
+                }
+            }
+            &Mobile {
+                display: none;
+                bottom: 0;
+                left: 2rem;
+                position: absolute;
+                height: 100%;
+                opacity: .5;
+                &Active {
+                    // display: none;
+                    bottom: 0;
+                    left: 2rem;
+                    position: absolute;
+                    height: 100%;
+                }
             }
         }
         &Right {
