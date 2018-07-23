@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import TalkToYourCandidateIndexPageSplit from '../pages-split/index/talk-to-your-candidate'
 import CrmIndexPageSplit from '../pages-split/index/crm'
+import AdaptingRecruitmentIndexPageSplit from '../pages-split/index/adapting-recruitment'
 
 const pageVariables = {
   pageCode: 'index',
@@ -20,6 +21,7 @@ const IndexPage = () => (
     <div>
       <TalkToYourCandidateIndexPageSplit />
       <CrmIndexPageSplit />
+      <AdaptingRecruitmentIndexPageSplit />
     </div>
   </div>
 )
