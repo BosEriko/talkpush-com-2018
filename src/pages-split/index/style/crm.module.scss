@@ -1,4 +1,60 @@
 @import '../../../mixins/mixins';
 .block {
-    color: $theme;
+    display: block;
+    background-color: #000;
+    color: #fff;
+    &Divider {
+        @include display-flex;
+        @include align-items-center;
+        &Left,
+        &Right {
+            @include flex(1);
+            padding: 2rem 0;
+            h2 {
+                font-size: 3rem;
+                line-height: 4rem;
+                font-weight: 100;
+            }
+            p {
+                margin: 0;
+                padding: 1.5rem 0;
+            }
+        }
+        &Right {
+            &ToggleButton {
+                display: inline-block;
+                ul {
+                    list-style-type: none;
+                    display: inline-block;
+                    margin: 0 2rem 0 0;
+                    padding: 0;
+                    li {
+                        display: inline-block;
+                        a {
+                            &.active {
+                                background-color: $theme;
+                                text-shadow: none;
+                            }
+                        }
+                    }
+                }
+            }
+            &CrmButton {
+                display: inline-block;
+                a {
+                    background-color: rgba(255, 255, 255, .25);
+                    &:hover,
+                    &:focus {
+                        background-color: rgba(255, 255, 255, .5);
+                    }
+                }
+                img {
+                    vertical-align: bottom;
+                    height: 1rem;
+                    line-height: 1rem;
+                    margin-right: .5rem;
+                }
+            }
+        }
+    }
 }

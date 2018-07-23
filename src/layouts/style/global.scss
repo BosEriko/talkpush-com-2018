@@ -88,7 +88,8 @@ a:hover {
       box-shadow: 0 0 10px $semi-theme-50, inset 0 0 10px $semi-theme-50;
     }
 
-    &:active{
+    &:active,
+    &.active {
       text-shadow: none;
       background-color: $theme;
       box-shadow: 0 0 10px $semi-theme-75;
@@ -107,4 +108,8 @@ a:hover {
 
 .text-uppercase {
   text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
 }
