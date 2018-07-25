@@ -22,10 +22,32 @@
         margin: 1rem auto;
     }
     &Divider {
-        @include display-flex;
+        margin: 5rem 0;
+        @media screen and (min-width: $break-medium) {
+            @include display-flex;
+        }
         &Item {
             text-align: center;
-            @include flex(1);
+            margin: 0 1rem;
+            @media screen and (min-width: $break-medium) {
+                @include flex(1);
+            }
+            img {
+                width: 100%;
+                max-width: 12.5rem;
+                margin-bottom: 1rem;
+            }
+            h3 {
+                font-size: 2rem;
+            }
+            a {
+                background-color: rgba(255, 255, 255, .25);
+                min-width: 150px;
+                &:hover,
+                &:focus {
+                    background-color: rgba(255, 255, 255, .5);
+                }
+            }
         }
     }
 }
