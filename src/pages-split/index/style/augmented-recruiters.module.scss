@@ -1,4 +1,22 @@
 @import '../../../mixins/mixins';
 .block {
-    background-color: pink;
+    background-color: #000;
+    background-position: center;
+    background-image: url(../../../images/grid-bg.png);
+    color: #fff;
+    padding: 10rem 0;
+    h2 {
+        font-size: 3rem;
+        line-height: 4rem;
+        font-weight: 100;
+        text-align: center;
+        display: block;
+    }
+    h4 {
+        font-size: 1.25rem;
+        display: block;
+        max-width: 40rem;
+        text-align: center;
+        margin: 1rem auto;
+    }
 }
