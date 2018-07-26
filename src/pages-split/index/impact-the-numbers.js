@@ -18,6 +18,9 @@ const ImpactTheNumbersIndexPageSplit = () => (
             </div>
             <h3 className="global-hero-glow-white m-0 p-0">65%</h3>
             <p className={styles.blockFilterDividerItemMessage}>Reduction in costs per hire</p>
+            <div className={styles.blockFilterDividerItemBottom}>
+              <a href="#" className="global-button text-lowercase">Case Study: Alorica</a>
+            </div>
           </div>
 
           <div className={styles.blockFilterDividerItem}>
@@ -27,6 +30,9 @@ const ImpactTheNumbersIndexPageSplit = () => (
             </div>
             <h3 className="global-hero-glow-white m-0 p-0">35%</h3>
             <p className={styles.blockFilterDividerItemMessage}>Candidate satisfaction NPS</p>
+            <div className={styles.blockFilterDividerItemBottom}>
+              <a href="#" className="global-button text-lowercase">Case Study: Genpact</a>
+            </div>
           </div>
 
           <div className={styles.blockFilterDividerItem}>
@@ -36,6 +42,9 @@ const ImpactTheNumbersIndexPageSplit = () => (
             </div>
             <h3 className="global-hero-glow-white m-0 p-0">10x</h3>
             <p className={styles.blockFilterDividerItemMessage}>Candidates processed per recruiter</p>
+            <div className={styles.blockFilterDividerItemBottom}>
+              <a href="#" className="global-button text-lowercase">Case Study: Starwood</a>
+            </div>
           </div>
 
           <div className={styles.blockFilterDividerItem}>
@@ -45,6 +54,9 @@ const ImpactTheNumbersIndexPageSplit = () => (
             </div>
             <h3 className="global-hero-glow-white m-0 p-0" style={{ fontSize: '2.5rem', margin: '1rem 0' }}>1,328,921</h3>
             <p className={styles.blockFilterDividerItemMessage}>Automated conversations</p>
+            <div className={styles.blockFilterDividerItemBottom}>
+              <a href="#" className="global-button text-lowercase">More about Talkpush</a>
+            </div>
           </div>
 
         </div>

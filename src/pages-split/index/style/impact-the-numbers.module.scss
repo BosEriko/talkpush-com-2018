@@ -65,6 +65,21 @@
                     width: 100%;
                     max-width: 10rem;
                 }
+                &Bottom {
+                    margin-top: auto;
+                    text-align: center;
+                    a {
+                        margin-top: 1rem;
+                        width: 100%;
+                        max-width: 150px;
+                        background-color: rgba(255, 255, 255, .25);
+                        text-transform: none;
+                        &:hover,
+                        &:focus {
+                            background-color: rgba(255, 255, 255, .5);
+                        }
+                    }
+                }
             }
         }
     }
