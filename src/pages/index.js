@@ -4,6 +4,7 @@ import TalkToYourCandidateIndexPageSplit from '../pages-split/index/talk-to-your
 import CrmIndexPageSplit from '../pages-split/index/crm'
 import AdaptingRecruitmentIndexPageSplit from '../pages-split/index/adapting-recruitment'
 import ImpactTheNumbersIndexPageSplit from '../pages-split/index/impact-the-numbers'
+import AugmentedRecruitersIndexPageSplit from '../pages-split/index/augmented-recruiters'
 
 const pageVariables = {
   pageCode: 'index',
@@ -24,6 +25,7 @@ const IndexPage = () => (
       <CrmIndexPageSplit />
       <AdaptingRecruitmentIndexPageSplit />
       <ImpactTheNumbersIndexPageSplit />
+      <AugmentedRecruitersIndexPageSplit />
     </div>
   </div>
 )
