@@ -23,12 +23,16 @@
         margin: 2rem 0 0 0;
         padding: 0;
         list-style-type: none;
-        white-space: nowrap;
-        overflow-x: scroll;
+        @media screen and (min-width: $break-medium) {
+            white-space: nowrap;
+            overflow-x: scroll;
+        }
         li {
-            width: auto;
             padding: 0 1rem;
-            display: inline-block;
+            @media screen and (min-width: $break-medium) {
+                width: auto;
+                display: inline-block;
+            }
         }
         &Item {
             &Video {
@@ -70,7 +74,9 @@
                     box-shadow: 0 3px 3px #000;
                     margin-bottom: 1rem;
                     overflow: hidden;
-                    height: 140px;
+                    @media screen and (min-width: $break-medium) {
+                        height: 140px;
+                    }
                 }
                 &User {
                     @include display-flex;
