@@ -20,9 +20,11 @@
         background-color: #000;
         padding: 2rem 0;
         &Divider {
-            @include display-flex;
-            @include align-items-center;
             margin: 3rem 0;
+            @media screen and (min-width: $break-medium) {
+                @include display-flex;
+                @include align-items-center;
+            }
             &Left {
                 text-align: center;
                 &Image {
@@ -34,6 +36,7 @@
                     border-color: $theme;
                     border-width: 5px;
                     overflow: hidden;
+                    margin: 0 auto;
                     img {
                         vertical-align: bottom;
                         width: 100%;
@@ -42,8 +45,11 @@
                 }
             }
             &Right {
-                margin-left: 5rem;
                 color: #fff;
+                @media screen and (min-width: $break-medium) {
+                    @include flex(1);
+                    margin-left: 5rem;
+                }
                 &NamePosition {
                     @include display-flex;
                     @include align-items-center;
@@ -78,11 +84,11 @@
         background-color: #fff;
         &Members {
             &Row {
-                @media screen and (min-width: $break-medium) {
+                @media screen and (min-width: $break-small) {
                     @include display-flex;
                 }
                 &Item {
-                    @media screen and (min-width: $break-medium) {
+                    @media screen and (min-width: $break-small) {
                         @include flex(1);
                     }
                     text-align: center;
