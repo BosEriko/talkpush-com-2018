@@ -23,7 +23,7 @@ class AugmentedRecruitersIndexPageSplit extends React.Component {
 
             <li className="testimonial-section-divide-item">
               <div className={styles.blockDivideItemVideo}>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameBorder="0" allowFullScreen></iframe>
               </div>
               <div className={styles.blockDivideItemDetails}>
                 <div className={styles.blockDivideItemDetailsMessage}>
@@ -42,7 +42,7 @@ class AugmentedRecruitersIndexPageSplit extends React.Component {
 
             <li className="testimonial-section-divide-item">
               <div className={styles.blockDivideItemVideo}>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameBorder="0" allowFullScreen></iframe>
               </div>
               <div className={styles.blockDivideItemDetails}>
                 <div className={styles.blockDivideItemDetailsMessage}>
@@ -61,7 +61,7 @@ class AugmentedRecruitersIndexPageSplit extends React.Component {
 
             <li className="testimonial-section-divide-item">
               <div className={styles.blockDivideItemVideo}>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameBorder="0" allowFullScreen></iframe>
               </div>
               <div className={styles.blockDivideItemDetails}>
                 <div className={styles.blockDivideItemDetailsMessage}>
@@ -80,7 +80,7 @@ class AugmentedRecruitersIndexPageSplit extends React.Component {
 
             <li className="testimonial-section-divide-item">
               <div className={styles.blockDivideItemVideo}>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameBorder="0" allowFullScreen></iframe>
               </div>
               <div className={styles.blockDivideItemDetails}>
                 <div className={styles.blockDivideItemDetailsMessage}>
