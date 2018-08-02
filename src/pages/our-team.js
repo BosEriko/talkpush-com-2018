@@ -42,7 +42,86 @@ const OurTeamPage = () => (
     <div className={styles.blockTeam}>
       <div className="container">
         <h2 className="global-hero-glow-green m-0 p-0" style={{ textShadow: 'none' }}>Meet the team</h2>
-        Grid should be here
+        <div className={styles.blockTeamMembers}>
+          <div className={styles.blockTeamMembersRow}>
+            <div className={styles.blockTeamMembersRowItem}>
+              <div className={styles.blockTeamMembersRowItemImage}>
+                <img src={defaultPicture} alt="Default" />
+              </div>
+              <h4 className="m-0 p-0">Name of Employee</h4>
+              <span>Current Position</span>
+              <a href="#" className="global-button text-lowercase">Read More</a>
+            </div>
+            <div className={styles.blockTeamMembersRowItem}>
+              <div className={styles.blockTeamMembersRowItemImage}>
+                <img src={defaultPicture} alt="Default" />
+              </div>
+              <h4 className="m-0 p-0">Name of Employee</h4>
+              <span>Current Position</span>
+              <a href="#" className="global-button text-lowercase">Read More</a>
+            </div>
+            <div className={styles.blockTeamMembersRowItem}>
+              <div className={styles.blockTeamMembersRowItemImage}>
+                <img src={defaultPicture} alt="Default" />
+              </div>
+              <h4 className="m-0 p-0">Name of Employee</h4>
+              <span>Current Position</span>
+              <a href="#" className="global-button text-lowercase">Read More</a>
+            </div>
+          </div>
+          <div className={styles.blockTeamMembersRow}>
+            <div className={styles.blockTeamMembersRowItem}>
+              <div className={styles.blockTeamMembersRowItemImage}>
+                <img src={defaultPicture} alt="Default" />
+              </div>
+              <h4 className="m-0 p-0">Name of Employee</h4>
+              <span>Current Position</span>
+              <a href="#" className="global-button text-lowercase">Read More</a>
+            </div>
+            <div className={styles.blockTeamMembersRowItem}>
+              <div className={styles.blockTeamMembersRowItemImage}>
+                <img src={defaultPicture} alt="Default" />
+              </div>
+              <h4 className="m-0 p-0">Name of Employee</h4>
+              <span>Current Position</span>
+              <a href="#" className="global-button text-lowercase">Read More</a>
+            </div>
+            <div className={styles.blockTeamMembersRowItem}>
+              <div className={styles.blockTeamMembersRowItemImage}>
+                <img src={defaultPicture} alt="Default" />
+              </div>
+              <h4 className="m-0 p-0">Name of Employee</h4>
+              <span>Current Position</span>
+              <a href="#" className="global-button text-lowercase">Read More</a>
+            </div>
+          </div>
+          <div className={styles.blockTeamMembersRow}>
+            <div className={styles.blockTeamMembersRowItem}>
+              <div className={styles.blockTeamMembersRowItemImage}>
+                <img src={defaultPicture} alt="Default" />
+              </div>
+              <h4 className="m-0 p-0">Name of Employee</h4>
+              <span>Current Position</span>
+              <a href="#" className="global-button text-lowercase">Read More</a>
+            </div>
+            <div className={styles.blockTeamMembersRowItem}>
+              <div className={styles.blockTeamMembersRowItemImage}>
+                <img src={defaultPicture} alt="Default" />
+              </div>
+              <h4 className="m-0 p-0">Name of Employee</h4>
+              <span>Current Position</span>
+              <a href="#" className="global-button text-lowercase">Read More</a>
+            </div>
+            <div className={styles.blockTeamMembersRowItem}>
+              <div className={styles.blockTeamMembersRowItemImage}>
+                <img src={defaultPicture} alt="Default" />
+              </div>
+              <h4 className="m-0 p-0">Name of Employee</h4>
+              <span>Current Position</span>
+              <a href="#" className="global-button text-lowercase">Read More</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div className={styles.blockJoin}>
