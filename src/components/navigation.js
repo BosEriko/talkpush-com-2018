@@ -53,7 +53,7 @@ class Navigation extends React.Component {
             <span id="aboutDropdownToggle">About<i className="fa fa-angle-down" aria-hidden="true"></i></span>
             <ul id="aboutDropdownMenu">
               <li><Link activeClassName="activePage" to="/our-style"><img src={chatbotIcon} alt="Our Style" />Our Style</Link></li>
-              <li><a href="#"><img src={chatbotIcon} alt="Chatbot" />Our Team</a></li>
+              <li><Link activeClassName="activePage" to="/our-team"><img src={chatbotIcon} alt="Chatbot" />Our Team</Link></li>
               <li><a href="#"><img src={chatbotIcon} alt="Chatbot" />Join Our Team</a></li>
               <li><a href="#"><img src={chatbotIcon} alt="Chatbot" />Gallery</a></li>
             </ul>
