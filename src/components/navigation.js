@@ -54,7 +54,7 @@ class Navigation extends React.Component {
             <ul id="aboutDropdownMenu">
               <li><Link activeClassName="activePage" to="/our-style"><img src={chatbotIcon} alt="Our Style" />Our Style</Link></li>
               <li><Link activeClassName="activePage" to="/our-team"><img src={chatbotIcon} alt="Chatbot" />Our Team</Link></li>
-              <li><a href="#"><img src={chatbotIcon} alt="Chatbot" />Join Our Team</a></li>
+              <li><Link activeClassName="activePage" to="/jobs"><img src={chatbotIcon} alt="Join Our Team" />Join Our Team</Link></li>
               <li><a href="#"><img src={chatbotIcon} alt="Chatbot" />Gallery</a></li>
             </ul>
           </li>
