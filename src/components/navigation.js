@@ -55,7 +55,7 @@ class Navigation extends React.Component {
               <li><Link activeClassName="activePage" to="/our-style"><img src={chatbotIcon} alt="Our Style" />Our Style</Link></li>
               <li><Link activeClassName="activePage" to="/our-team"><img src={chatbotIcon} alt="Chatbot" />Our Team</Link></li>
               <li><Link activeClassName="activePage" to="/jobs"><img src={chatbotIcon} alt="Join Our Team" />Join Our Team</Link></li>
-              <li><a href="#"><img src={chatbotIcon} alt="Chatbot" />Gallery</a></li>
+              <li><Link activeClassName="activePage" to="/gallery"><img src={chatbotIcon} alt="Gallery" />Gallery</Link></li>
             </ul>
           </li>
           <li><Link activeClassName="activePage" to="/jobs">Career</Link></li>
