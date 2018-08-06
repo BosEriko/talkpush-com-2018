@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import styles from '../pages-style/our-team.module.scss'
 import defaultPicture from '../pages-images/our-team/default.png'
+import Link from 'gatsby-link'
 
 const pageVariables = {
   pageCode: 'our-team',
@@ -33,7 +34,7 @@ const OurTeamPage = () => (
             </div>
             <p className="m-0">I have always wanted to show people what it’s like to work for a company like ours and to share my experience of the start-up adventure, so I’ve put together this vlog, which I hope you’ll get some inspiration from and maybe even get you excited about exploring career opportunities at Talkpush.</p>
             <div className={styles.blockExperiencesDividerRightReadMore}>
-              <a href="#" className="global-button text-lowercase">Read More</a>
+              <Link to="/our-team/yuan" className="global-button text-lowercase">Read More</Link>
             </div>
           </div>
         </div>
