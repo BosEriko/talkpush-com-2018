@@ -22,14 +22,14 @@ const OurTeamPage = () => (
       <div className="container">
         <div className={styles.blockExperiencesUserDetails}>
           <div className={styles.blockExperiencesUserDetailsImage}>
-            <img src={defaultPicture} alt="Yuan Yim"/>
+            <img src={defaultPicture} alt="Yuan Yim" />
           </div>
           <div className={styles.blockExperiencesUserDetailsData}>
             <h3 className="global-hero-green-glow p-0">Yuan Yim</h3>
             <p className="m-0 p-0">Head of Resource and Community</p>
           </div>
           <div className={styles.blockExperiencesUserDetailsHeart}>
-            <img src={heartIcon} alt="Heart"/>
+            <img src={heartIcon} alt="Heart" />
           </div>
         </div>
         <div className={styles.blockVideoHolder}>
@@ -43,8 +43,51 @@ const OurTeamPage = () => (
           <p>And so there I was sitting in our small office in Makati (we’ve moved to bigger place since) with a bunch of tasks that would have been enough to fill the agenda of 3 full-time staff... In my head a voice was screaming “Now is the time for you to wear different hats on the job”. In the office with me were a handful of stellar individuals, the beginning of a core team, trying to figure out exactly what our job entailed. We knew we had something promising, but there was no how-to guide on how to get it done.</p>
           <p>Fast forward to today.</p>
           <p>First of all I am no longer clueless. We were also able to grow the business 3x last year (and 3x the year before) and now have customers in 16 countries (and counting...), in the process growing our headcount from 10 to over 30 (by the way, we’re hiring!). Of course, it was not an easy process. From then till now, we have gone through rough patches and a lot of problems, challenges that kept us up at night, putting in long work hours, with the occasional feeling of dismay and frustration. That’s really how it’s like in the early phases: lots of trial and errors. I have had my fair share of shameful failures and sparkling achievements. I have also learned how to work more independently and autonomously because we are given the liberty to work from anywhere we want to. Not being tied to the desk has its perks — I can travel and work from different places and I don’t have to worry as much about the crazy traffic here in Manila.</p>
-          <p>
-Working in a startup means finding solutions where you least expect it and having the ability to push your boundaries. You will also be able to explore your skill sets in a lot of unconventional ways — and even if you think you know enough, you don’t. You learn something new everyday, as the business grows.</p>
+          <p>Working in a startup means finding solutions where you least expect it and having the ability to push your boundaries. You will also be able to explore your skill sets in a lot of unconventional ways — and even if you think you know enough, you don’t. You learn something new everyday, as the business grows.</p>
+        </div>
+      </div>
+    </div>
+    <div className={styles.blockTeam}>
+      <div className="container">
+        <h2 className="global-hero-glow-green m-0 p-0" style={{ textShadow: 'none' }}>Meet the team</h2>
+        <div className={styles.blockTeamMembers}>
+          <div className={styles.blockTeamMembersRow}>
+            <div className={styles.blockTeamMembersRowItem}>
+              <div className={styles.blockTeamMembersRowItemImage}>
+                <img src={defaultPicture} alt="Default" />
+              </div>
+              <h4 className="m-0 p-0">Name of Employee</h4>
+              <span>Current Position</span>
+              <a href="#" className="global-button text-lowercase">Read More</a>
+            </div>
+            <div className={styles.blockTeamMembersRowItem}>
+              <div className={styles.blockTeamMembersRowItemImage}>
+                <img src={defaultPicture} alt="Default" />
+              </div>
+              <h4 className="m-0 p-0">Name of Employee</h4>
+              <span>Current Position</span>
+              <a href="#" className="global-button text-lowercase">Read More</a>
+            </div>
+            <div className={styles.blockTeamMembersRowItem}>
+              <div className={styles.blockTeamMembersRowItemImage}>
+                <img src={defaultPicture} alt="Default" />
+              </div>
+              <h4 className="m-0 p-0">Name of Employee</h4>
+              <span>Current Position</span>
+              <a href="#" className="global-button text-lowercase">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className={styles.blockJoin}>
+      <div className="container">
+        <div className={styles.blockJoinBox}>
+          <div className={styles.blockJoinBoxDetails}>
+            <h3>Join our growing team</h3>
+            <p className="m-0 p-0">Join Talkpush and let's make recruitment fun together</p>
+            <a href="#">Careers</a>
+          </div>
         </div>
       </div>
     </div>
