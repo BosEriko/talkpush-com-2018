@@ -14,6 +14,7 @@ const GalleryPage = () => (
       <meta name='description' content={pageVariables.pageDescription} />
       <meta property='og:description' content={pageVariables.pageDescription} />
     </Helmet>
+    <div className={styles.blockHeader}></div>
     <p>{pageVariables.pageDescription}</p>
   </div>
 )
