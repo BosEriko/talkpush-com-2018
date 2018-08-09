@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import styles from '../pages-style/customers.module.scss'
 
 const pageVariables = {
   pageCode: 'customers',
@@ -7,13 +8,25 @@ const pageVariables = {
 }
 
 const CustomersPage = () => (
-  <div>
+  <div className={styles.block}>
     <Helmet>
       <title>{pageVariables.pageCode}</title>
       <meta name='description' content={pageVariables.pageDescription} />
       <meta property='og:description' content={pageVariables.pageDescription} />
     </Helmet>
-    <p>{pageVariables.pageDescription}</p>
+    <div className={styles.blockHeader}>
+      <div className={styles.blockHeaderContent}>
+        <h1 className="global-hero-glow-white m-0 p-0">Customers who let their talent talk</h1>
+        <p className="p-0">
+          "Customers come to us when they want to remove any barrier that stands between them and their next great hire."
+        </p>
+      </div>
+    </div>
+    <div className={styles.blockContent}>
+      <div className="container">
+        Content goes here.
+      </div>
+    </div>
   </div>
 )
 
