@@ -1,0 +1,38 @@
+@import '../mixins/mixins';
+.block {
+    &Header {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-image: url(../pages-images/crm/header.jpg);
+        background-color: #000;
+        @media screen and (min-width: $break-medium) {
+            background-position: center 0;
+            position: relative;
+            padding-top: 45%;
+        }
+        &Content {
+            width: 100%;
+            padding: 10rem 1rem;
+            background-color: $semi-black-50;
+            @media screen and (min-width: $break-medium) {
+                right: 0;bottom: 0;left: 0;
+                position: absolute;
+                background-color: transparent;
+                padding: 0;
+            }
+            h1 {
+                font-weight: 100;
+                font-size: 3rem;
+                text-align: center;
+                @media screen and (min-width: $break-medium) {
+                    text-align: left;
+                }
+                span {
+                    display: block;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
