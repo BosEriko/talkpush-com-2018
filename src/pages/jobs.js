@@ -29,8 +29,8 @@ class JobsPage extends React.Component {
     // })()
     // window.botOnReceive = () => this.botScrollFunction()
     // window.botOnSend = () => this.botScrollFunction()
-    document.getElementById("talkpush-bot-iframe").contentWindow.botOnReceive = () => console.log("received")
-    document.getElementById("talkpush-bot-iframe").contentWindow.botOnSend = () => console.log("sent")
+    // document.getElementById("talkpush-bot-iframe").contentWindow.botOnReceive = () => console.log("received")
+    // document.getElementById("talkpush-bot-iframe").contentWindow.botOnSend = () => console.log("sent")
   }
   render() {
     return (
