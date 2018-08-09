@@ -40,9 +40,10 @@ class JobsPage extends React.Component {
           <meta name='description' content={this.pageVariables.pageDescription} />
           <meta property='og:description' content={this.pageVariables.pageDescription} />
         </Helmet>
-        {/* <div id="talkpush-bot" className="crb"></div> */}
+        {/* <div id="talkpush-bot" className="crb"></div>
         <div style={{ height: '1000px' }}></div>
-        <iframe src="/talkpush-bot.html" frameBorder="0" style={{ height: '500px', width: '500px' }} id="talkpush-bot-iframe"></iframe>
+        <iframe src="/talkpush-bot.html" frameBorder="0" style={{ height: '500px', width: '500px' }} id="talkpush-bot-iframe"></iframe> */}
+        <p>{this.pageVariables.pageDescription}</p>
       </div>
     )
   }
