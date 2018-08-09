@@ -1,0 +1,256 @@
+@import '../mixins/mixins';
+.crb-open-message {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+
+  &::before {
+    display: inline-block;
+    background-color: #fff;
+    content: "Talk to our recruitment team below";
+    padding: 1rem;
+    position: relative;
+    z-index: 2;
+    font-size: 0.75rem;
+    color: #555;
+  }
+
+  &::after {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    display: block;
+    content: "";
+    height: 1px;
+    background-color: #c7c7c7;
+    z-index: 1;
+  }
+}
+
+.crb#talkpush-bot {
+  .tp_title {
+    display: none;
+  }
+
+  ul.tp_dataText {
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border: none;
+    padding-top: 0;
+  }
+
+  .tp_body {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-width: 1px 0 0 0 !important;
+    border-radius: 0 !important;
+    z-index: 10;
+  }
+
+  .tp_typingFeedbackContent {
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+svg#Layer_1.bot-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.jobs-slider {
+  height: auto;
+  position: relative;
+
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    transform: translateY(-50%);
+    font-size: 0;
+    line-height: 0;
+    border: none;
+    background: none;
+    background-size: cover;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+  }
+
+  .slick-prev {
+    left: 2rem;
+    // background-image: url("../images/job-slider/arrows/left.png");
+  }
+
+  .slick-next {
+    right: 2rem;
+    // background-image: url("../images/job-slider/arrows/right.png");
+  }
+
+  .slick-list {
+    position: relative;
+    z-index: 1;
+  }
+
+  .slide {
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+
+    .filter {
+      padding: 7.5rem;
+      background-color: rgba(0, 0, 0, 0.5);
+    //   background-image: url("../images/filter.png");
+
+      h1 {
+        padding: 0 0 10px 0;
+        margin: 0 auto;
+        color: #fff;
+        font-size: 2rem;
+        font-weight: normal;
+        text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.25);
+        max-width: 800px;
+      }
+
+      h3 {
+        padding: 0;
+        margin: 0 auto;
+        font-size: 1.25rem;
+        font-weight: normal;
+        color: #fff;
+        max-width: 800px;
+      }
+
+      h4 {
+        font-size: 2rem;
+        color: #fff;
+        padding: 0.5rem;
+        margin: 0;
+      }
+
+      ul {
+        @media screen and (min-width: $break-medium) {
+          @include display-flex;
+        }
+
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+
+        li {
+          @media screen and (min-width: $break-medium) {
+            @include flex(1);
+          }
+
+          text-align: center;
+          margin: 0;
+          padding: 1rem;
+        }
+      }
+    }
+  }
+}
+
+ul#crb-buttons {
+  margin: 2rem 0 0 0;
+  padding: 0;
+  list-style-type: none;
+
+  li {
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    @media screen and (min-width: $break-large) {
+      display: inline-block;
+    }
+
+    a {
+      @include prefix(transition, transform 0.3s ease-in-out);
+
+      background-color: rgba(255, 255, 255, 0.25);
+      border-color: rgba(255, 255, 255, 0.25);
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 3px;
+      color: #fff;
+      display: block;
+      margin: 1rem;
+      padding: 8px;
+      font-size: 0.85rem;
+      text-align: center;
+      text-decoration: none;
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+      font-weight: bold;
+
+      @media screen and (min-width: $break-large) {
+        display: inline-block;
+        width: 200px;
+      }
+
+      &.main {
+        background-color: $theme;
+        color: rgba(0, 0, 0, 0.75);
+        border-width: 1px;
+        border-color: rgba(0, 0, 0, 0.5);
+      }
+
+      &:focus,
+      &:hover {
+        @include prefix(transform, scale(1.05));
+      }
+
+      span {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+#crb-pop-up-content {
+  .cover {
+    position: relative;
+
+    img {
+      vertical-align: bottom;
+      width: 100%;
+    }
+
+    .shadow {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      box-shadow: inset 0 -4rem 20px 0 rgba(0, 0, 0, 0.65);
+      height: 100%;
+
+      h4 {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        text-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
+      }
+    }
+  }
+
+  p.content {
+    padding: 20px;
+    margin: 0;
+  }
+}
