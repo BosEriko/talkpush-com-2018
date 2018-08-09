@@ -16,8 +16,8 @@ const CustomersPage = () => (
     </Helmet>
     <div className={styles.blockHeader}>
       <div className={styles.blockHeaderContent}>
-        <h1 className="global-hero-glow-white m-0 p-0">Customers who let their talent talk</h1>
-        <p className="p-0">
+        <h1 className="global-hero-glow-white">Customers who let their talent talk</h1>
+        <p>
           "Customers come to us when they want to remove any barrier that stands between them and their next great hire."
         </p>
       </div>
