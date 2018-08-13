@@ -63,7 +63,9 @@ class JobsPage extends React.Component {
           </div>
         </div>
         <div className={styles.blockChat}>
-          <iframe src="/talkpush-bot/index.html" style={{ width: '100%' }} scrolling="no" frameBorder="0" id="talkpush-bot-iframe"></iframe>
+          <div className="container">
+            <iframe src="/talkpush-bot/index.html" style={{ width: '100%', minHeight: '300px' }} scrolling="no" frameBorder="0" id="talkpush-bot-iframe"></iframe>
+          </div>
         </div>
       </div>
     )
