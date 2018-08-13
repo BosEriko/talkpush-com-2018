@@ -81,5 +81,10 @@
     background-color: black;
     background-position: center;
     background-image: url(./../images/grid-bg.png);
+    &Notice {
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
   }
 }

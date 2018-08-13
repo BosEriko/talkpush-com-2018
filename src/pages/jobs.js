@@ -15,13 +15,14 @@ class JobsPage extends React.Component {
     let botScrollFunction = () => window.scrollTo(0, document.body.scrollHeight)
     let talkpushFrame = document.getElementById("talkpush-bot-iframe")
     let talkpushFrameContent = talkpushFrame.contentWindow
+    let setTalkpushFrameHeight = () => talkpushFrame.style.height = talkpushFrameContent.document.body.scrollHeight + "px"
 
     talkpushFrameContent.botOnReceive = () => {
-      talkpushFrame.style.height = talkpushFrameContent.document.body.scrollHeight + "px"
+      setTalkpushFrameHeight()
       botScrollFunction()
     }
     talkpushFrameContent.botOnSend = () => {
-      talkpushFrame.style.height = talkpushFrameContent.document.body.scrollHeight + "px"
+      setTalkpushFrameHeight()
       botScrollFunction()
     }
 
@@ -64,6 +65,7 @@ class JobsPage extends React.Component {
         </div>
         <div className={styles.blockChat}>
           <div className="container">
+            <div className={styles.blockChatNotice}>Talk to our recruitment team below</div>
             <iframe src="/talkpush-bot/index.html" style={{ width: '100%', minHeight: '300px' }} scrolling="no" frameBorder="0" id="talkpush-bot-iframe"></iframe>
           </div>
         </div>

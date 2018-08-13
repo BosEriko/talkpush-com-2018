@@ -1,3 +1,23 @@
+:root {
+  font-size: 12px;
+  transition: font-size 0.3s 0s ease-in-out;
+  -webkit-transition: font-size 0.3s 0s ease-in-out;
+}
+@media screen and (min-width: 481px) {
+    :root {
+        font-size: 13px;
+    }
+}
+@media screen and (min-width: 961px) {
+    :root {
+       font-size: 14px;
+    }
+}
+@media screen and (min-width: 1281px) {
+    :root {
+        font-size: 15px;
+    }
+}
 body {
     background-color: transparent;
 }
@@ -7,23 +27,34 @@ body {
 .crb#talkpush-bot ul.tp_dataText {
     height: auto;
     overflow: hidden;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
     border: none;
     padding-top: 0;
+    min-height: 150px !important;
 }
 .crb#talkpush-bot .tp_body {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    border-width: 1px 0 0 0 !important;
-    border-radius: 0 !important;
     z-index: 10;
+    border: 0;
+    background-color: transparent;
+}
+.crb#talkpush-bot .tp_body textarea{
+    background-color: rgba(255,255,255,.2) !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: #ccc !important;
+    padding: 1rem !important;
+    color: #fff !important;
+    font-size: 1rem !important;
+}
+.crb#talkpush-bot .tp_body button{
+    color: #fff !important;
+    border: 0 !important;
+    box-shadow: 0 0 10px #72de2f !important;
+    padding: 1rem 2rem !important;
+    text-transform: lowercase !important;
+    font-size: 1rem !important;
+    margin-left: 2rem !important;
 }
 .crb#talkpush-bot .tp_typingFeedbackContent {
-    position: fixed;
     width: 100%;
     padding: 10px;
 }

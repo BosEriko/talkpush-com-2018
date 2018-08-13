@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Talkpush Bot</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -30,6 +32,19 @@
                 w.addEventListener("load", l, false);
             }
         })()
+    </script>
+    <script>
+        $(function () {
+            $(window).bind("load", function () {
+                setTimeout(function () {
+                    document.getElementById('tp_typingFeedback').classList.add('active')
+                }, 2000)
+                setTimeout(function () {
+                    tp_dataText.insertAdjacentHTML('beforeend', tp_Chat("left", "https://i.imgur.com/iIQ7VMC.png", "Hi there! My name is Stanley and I'm here to find out if we have a suitable position for you. To start this conversation, please say hello!", ""))
+                    document.getElementById('tp_typingFeedback').classList.remove('active')
+                }, 5000)
+            })
+        });
     </script>
 </body>
 
