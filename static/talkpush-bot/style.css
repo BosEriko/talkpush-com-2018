@@ -31,6 +31,39 @@ body {
     padding-top: 0;
     min-height: 150px !important;
 }
+.crb#talkpush-bot ul.tp_dataText li.tp_ChatItems .timestamp{
+    color: #fff !important;
+}
+.crb#talkpush-bot ul.tp_dataText li.tp_ChatItems .tp_ChatFlex.left .bubble{
+    border-radius: 3px !important;
+    background-color: #fff !important;
+    box-shadow: 0 0 10px #e800ff;
+    padding: 1rem !important;
+    font-size: 1rem !important;
+}
+.crb#talkpush-bot ul.tp_dataText li.tp_ChatItems .tp_ChatFlex.right .bubble{
+    border-radius: 3px !important;
+    background-color: #72de2f !important;
+    box-shadow: 0 0 10px #72de2f;
+    padding: 1rem !important;
+    font-size: 1rem !important;
+}
+.crb#talkpush-bot ul.tp_dataText li.tp_ChatItems .tp_ChatFlex.left .image{
+    background-color: #fff !important;
+    box-shadow: 0 0 10px #e800ff;
+}
+.crb#talkpush-bot ul.tp_dataText li.tp_ChatItems .tp_ChatFlex.right .tp_initialsHolder{
+    background-color: #72de2f !important;
+    box-shadow: 0 0 10px #72de2f;
+}
+.crb#talkpush-bot .tp_typingDotHolder{
+    border-radius: 3px !important;
+    box-shadow: 0 0 10px #e800ff;
+    background-color: #fff !important;
+}
+.crb#talkpush-bot .tp_typingFeedbackContent img{
+    box-shadow: 0 0 10px #e800ff;
+}
 .crb#talkpush-bot .tp_body {
     z-index: 10;
     border: 0;
@@ -50,6 +83,7 @@ body {
     color: #fff !important;
     border: 0 !important;
     box-shadow: 0 0 10px #72de2f !important;
+    background-color: #72de2f !important;
     padding: 1rem 2rem !important;
     text-transform: lowercase !important;
     font-size: 1rem !important;
