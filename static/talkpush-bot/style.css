@@ -1,0 +1,32 @@
+body {
+    background-color: transparent;
+}
+.crb#talkpush-bot .tp_title {
+    display: none;
+}
+.crb#talkpush-bot ul.tp_dataText {
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border: none;
+    padding-top: 0;
+}
+.crb#talkpush-bot .tp_body {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-width: 1px 0 0 0 !important;
+    border-radius: 0 !important;
+    z-index: 10;
+}
+.crb#talkpush-bot .tp_typingFeedbackContent {
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+}
+.crb#talkpush-bot .tp_box{
+    background-color: transparent;
+}

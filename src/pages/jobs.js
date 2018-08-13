@@ -1,49 +1,51 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-// import '../pages-style/jobs.scss'
+import styles from '../pages-style/jobs.module.scss'
 
 class JobsPage extends React.Component {
   pageVariables = {
     pageCode: 'jobs',
     pageDescription: 'Ready to accelerate recruitment? Talkpush is the leading productivity platform and the most high-volume chatbot for hiring talent via Facebook, WeChat and messaging.',
   }
-  // botScrollFunction = () => window.scrollTo(0, document.body.scrollHeight)
-  componentDidMount() {
-    // (function () {
-    //   var w = window;
-    //   var d = document;
 
-    //   function l() {
-    //     var s = d.createElement("script");
-    //     s.type = "text/javascript";
-    //     s.async = true;
-    //     s.src = "https://my.talkpush.com/website_bot?company_id=16";
-    //     var x = d.getElementsByTagName("script")[0];
-    //     x.parentNode.insertBefore(s, x);
-    //   }
-    //   if (w.attachEvent) {
-    //     w.attachEvent("onload", l);
-    //   } else {
-    //     w.addEventListener("load", l, false);
-    //   }
-    // })()
-    // window.botOnReceive = () => this.botScrollFunction()
-    // window.botOnSend = () => this.botScrollFunction()
-    // document.getElementById("talkpush-bot-iframe").contentWindow.botOnReceive = () => console.log("received")
-    // document.getElementById("talkpush-bot-iframe").contentWindow.botOnSend = () => console.log("sent")
+  componentDidMount() {
+    let botScrollFunction = () => window.scrollTo(0, document.body.scrollHeight)
+    let talkpushFrame = document.getElementById("talkpush-bot-iframe")
+    let talkpushFrameContent = talkpushFrame.contentWindow
+
+    talkpushFrameContent.botOnReceive = () => {
+      talkpushFrame.style.height = talkpushFrameContent.document.body.scrollHeight + "px"
+      botScrollFunction()
+    }
+    talkpushFrameContent.botOnSend = () => {
+      talkpushFrame.style.height = talkpushFrameContent.document.body.scrollHeight + "px"
+      botScrollFunction()
+    }
+
+    document.getElementsByTagName("footer")[0].style.display = "none"
   }
+
+  componentWillUnmount() {
+    document.getElementsByTagName("footer")[0].style.display = "block"
+  }
+
   render() {
     return (
-      <div>
+      <div className={styles.block}>
         <Helmet>
           <title>{this.pageVariables.pageCode}</title>
           <meta name='description' content={this.pageVariables.pageDescription} />
           <meta property='og:description' content={this.pageVariables.pageDescription} />
         </Helmet>
-        {/* <div id="talkpush-bot" className="crb"></div>
-        <div style={{ height: '1000px' }}></div>
-        <iframe src="/talkpush-bot.html" frameBorder="0" style={{ height: '500px', width: '500px' }} id="talkpush-bot-iframe"></iframe> */}
-        <p>{this.pageVariables.pageDescription}</p>
+        <div className={styles.blockHeader}>
+          <div className={styles.blockHeaderContent}>
+            <div className={styles.blockHeaderContentFill}></div>
+            <h1 className="global-hero-glow-white p-0 m-0">We're Hiring</h1>
+            <p className="p-0">Thinking about working at Talkpush? We want to learn more about you so we can decide if there is a potential career for you at Talkpush. Talk to our recruitment agent Stanley below and start that conversation NOW.</p>
+            <div className={styles.blockHeaderContentFill}></div>
+          </div>
+        </div>
+        <iframe src="/talkpush-bot/index.html" style={{ width: '100%' }} scrolling="no" frameBorder="0" id="talkpush-bot-iframe"></iframe>
       </div>
     )
   }
