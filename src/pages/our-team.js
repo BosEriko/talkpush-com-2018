@@ -131,7 +131,7 @@ const OurTeamPage = () => (
           <div className={styles.blockJoinBoxDetails}>
             <h3>Join our growing team</h3>
             <p className="m-0 p-0">Join Talkpush and let's make recruitment fun together</p>
-            <a href="#">Careers</a>
+            <Link to="/jobs">Careers</Link>
           </div>
         </div>
       </div>

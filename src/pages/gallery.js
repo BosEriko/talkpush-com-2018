@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import Link from 'gatsby-link'
 import Modal from '../components/modal'
 import styles from '../pages-style/gallery.module.scss'
 import joinIcon from '../pages-images/gallery/join-icon.svg'
@@ -109,7 +110,7 @@ class GalleryPage extends React.Component {
               <div className={styles.blockContentJoinDetails}>
                 <h3>Join our growing team</h3>
                 <p className="m-0 p-0">Join Talkpush and let's make recruitment fun together</p>
-                <a href="#">Careers</a>
+                <Link to="/jobs">Careers</Link>
               </div>
             </div>
           </div>

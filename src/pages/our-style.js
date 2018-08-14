@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import Link from 'gatsby-link'
 import styles from '../pages-style/our-style.module.scss'
 import phoneIcon from '../pages-images/our-style/phone-icon.svg'
 import cultureIcon from '../pages-images/our-style/culture-icon.svg'
@@ -64,7 +65,7 @@ const OurStylePage = () => (
           <div className={styles.blockContentJoinDetails}>
             <h3>Join our growing team</h3>
             <p className="m-0 p-0">Join Talkpush and let's make recruitment fun together</p>
-            <a href="#">Careers</a>
+            <Link to="/jobs">Careers</Link>
           </div>
         </div>
       </div>
