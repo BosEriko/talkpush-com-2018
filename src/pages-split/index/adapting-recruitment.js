@@ -8,7 +8,7 @@ import multiplatformIcon from './images/adapting-recruitment/multiplatform.svg'
 const AdaptingRecruitmentIndexPageSplit = () => (
   <div className={styles.block}>
     <div className="container">
-      <h2 className="global-hero-glow-white m-0 p-0">Adapting Recruitment to New Behaviors</h2>
+      <h2 className="global-hero-glow-white m-0 p-0">Adapting Recruitment to New Behaviours</h2>
       <h4 className="p-0">Meet your candidates where they live and create engaging digital recruitment experiences</h4>
       <div className={styles.blockDivider}>
         <div className={styles.blockDividerItem}>
