@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './style/crm.module.scss'
+import Link from 'gatsby-link'
 import crmIcon from '../../icons/crm-white.svg'
 import laptopActive from './images/crm/laptop-active.svg'
 import laptopInactive from './images/crm/laptop.svg'
@@ -53,7 +54,7 @@ class CrmIndexPageSplit extends React.Component {
                   <li><a id="index-page-crm-block-web-toggle" href="#Web" className="global-button text-lowercase">Web</a></li>
                 </ul>
               </div>
-              <div className={styles.blockDividerRightCrmButton}><a href="#CRM" className="global-button text-lowercase"><img src={crmIcon} alt="CRM" />Discover our CRM Features</a></div>
+              <div className={styles.blockDividerRightCrmButton}><Link to="/crm" className="global-button text-lowercase"><img src={crmIcon} alt="CRM" />Discover our CRM Features</Link></div>
             </div>
           </div>
         </div>

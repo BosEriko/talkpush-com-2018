@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './style/impact-the-numbers.module.scss'
+import Link from 'gatsby-link'
 import hexagonIcon from './images/impact-the-numbers/hexagon.svg'
 import sampleIcon from './images/impact-the-numbers/sample.svg' 
 
@@ -19,7 +20,7 @@ const ImpactTheNumbersIndexPageSplit = () => (
             <h3 className="global-hero-glow-white m-0 p-0">65%</h3>
             <p className={styles.blockFilterDividerItemMessage}>Reduction in costs per hire</p>
             <div className={styles.blockFilterDividerItemBottom}>
-              <a href="#" className="global-button text-lowercase">Case Study: Alorica</a>
+              <a href="https://youtu.be/ciSB3gMpH_g" target="_blank" className="global-button text-lowercase">Case Study: Alorica</a>
             </div>
           </div>
 
@@ -31,7 +32,7 @@ const ImpactTheNumbersIndexPageSplit = () => (
             <h3 className="global-hero-glow-white m-0 p-0">35%</h3>
             <p className={styles.blockFilterDividerItemMessage}>Candidate satisfaction NPS</p>
             <div className={styles.blockFilterDividerItemBottom}>
-              <a href="#" className="global-button text-lowercase">Case Study: Genpact</a>
+              <a href="https://www.youtube.com/watch?v=g4i0vKSu0f4" target="_blank" className="global-button text-lowercase">Case Study: Genpact</a>
             </div>
           </div>
 
@@ -43,7 +44,7 @@ const ImpactTheNumbersIndexPageSplit = () => (
             <h3 className="global-hero-glow-white m-0 p-0">10x</h3>
             <p className={styles.blockFilterDividerItemMessage}>Candidates processed per recruiter</p>
             <div className={styles.blockFilterDividerItemBottom}>
-              <a href="#" className="global-button text-lowercase">Case Study: Starwood</a>
+              <a href="https://www.youtube.com/watch?v=nFRDqo_rc3o" target="_blank" className="global-button text-lowercase">Case Study: Starwood</a>
             </div>
           </div>
 
@@ -55,7 +56,7 @@ const ImpactTheNumbersIndexPageSplit = () => (
             <h3 className="global-hero-glow-white m-0 p-0" style={{ fontSize: '2.5rem', margin: '1rem 0' }}>1,328,921</h3>
             <p className={styles.blockFilterDividerItemMessage}>Automated conversations</p>
             <div className={styles.blockFilterDividerItemBottom}>
-              <a href="#" className="global-button text-lowercase">More about Talkpush</a>
+              <Link to="/our-style" className="global-button text-lowercase">More about Talkpush</Link>
             </div>
           </div>
 
