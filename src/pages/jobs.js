@@ -5,6 +5,7 @@ import Modal from '../components/modal'
 // import hiringIcon from '../pages-images/jobs/hiring.svg'
 // import cultureIcon from '../pages-images/jobs/culture.svg'
 // import locationIcon from '../pages-images/jobs/location.svg'
+import floatingMessageIcon from '../pages-images/jobs/floating-message.svg'
 
 class JobsPage extends React.Component {
   constructor(props) {
@@ -67,6 +68,9 @@ class JobsPage extends React.Component {
         </Helmet>
         {this.state.modalStatus ? <Modal closeModal={this.closeModal} type="gallery" maxWidth="800" title="Office Life" content="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." /> : null}
         <div className={styles.blockHeader}>
+          <div className={styles.blockHeaderMessageIcon}>
+            <img src={floatingMessageIcon} alt="Floating Message"/>
+          </div>
           <div className={styles.blockHeaderContent}>
             <div className={styles.blockHeaderContentFill}></div>
             <h1 className="global-hero-glow-white p-0 m-0">We're Hiring</h1>
