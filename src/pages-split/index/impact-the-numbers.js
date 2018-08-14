@@ -2,7 +2,10 @@ import React from 'react'
 import styles from './style/impact-the-numbers.module.scss'
 import Link from 'gatsby-link'
 import hexagonIcon from './images/impact-the-numbers/hexagon.svg'
-import sampleIcon from './images/impact-the-numbers/sample.svg' 
+import reductionIcon from './images/impact-the-numbers/reduction.svg'
+import satisfactionIcon from './images/impact-the-numbers/satisfaction.svg'
+import processedIcon from './images/impact-the-numbers/processed.svg'
+import automatedIcon from './images/impact-the-numbers/automated.svg'
 
 const ImpactTheNumbersIndexPageSplit = () => (
   <div className={styles.block}>
@@ -15,7 +18,7 @@ const ImpactTheNumbersIndexPageSplit = () => (
           <div className={styles.blockFilterDividerItem}>
             <div className={styles.blockFilterDividerItemImage}>
               <img className={styles.blockFilterDividerItemImageHexagon} src={hexagonIcon} alt="Hexagon"/>
-              <img className={styles.blockFilterDividerItemImageIcon} style={{ top: '3.5rem' }} src={sampleIcon} alt="Reduction" title="Reduction" />
+              <img className={styles.blockFilterDividerItemImageIcon} style={{ top: '3.5rem' }} src={reductionIcon} alt="Reduction" title="Reduction" />
             </div>
             <h3 className="global-hero-glow-white m-0 p-0">65%</h3>
             <p className={styles.blockFilterDividerItemMessage}>Reduction in costs per hire</p>
@@ -27,7 +30,7 @@ const ImpactTheNumbersIndexPageSplit = () => (
           <div className={styles.blockFilterDividerItem}>
             <div className={styles.blockFilterDividerItemImage}>
               <img className={styles.blockFilterDividerItemImageHexagon} src={hexagonIcon} alt="Hexagon"/>
-              <img className={styles.blockFilterDividerItemImageIcon} style={{ top: '3.5rem' }} src={sampleIcon} alt="Satisfaction" title="Satisfaction" />
+              <img className={styles.blockFilterDividerItemImageIcon} style={{ top: '3.5rem' }} src={satisfactionIcon} alt="Satisfaction" title="Satisfaction" />
             </div>
             <h3 className="global-hero-glow-white m-0 p-0">35%</h3>
             <p className={styles.blockFilterDividerItemMessage}>Candidate satisfaction NPS</p>
@@ -39,7 +42,7 @@ const ImpactTheNumbersIndexPageSplit = () => (
           <div className={styles.blockFilterDividerItem}>
             <div className={styles.blockFilterDividerItemImage}>
               <img className={styles.blockFilterDividerItemImageHexagon} src={hexagonIcon} alt="Hexagon"/>
-              <img className={styles.blockFilterDividerItemImageIcon} style={{ top: '3.5rem' }} src={sampleIcon} alt="Processed" title="Processed" />
+              <img className={styles.blockFilterDividerItemImageIcon} style={{ top: '3.5rem' }} src={processedIcon} alt="Processed" title="Processed" />
             </div>
             <h3 className="global-hero-glow-white m-0 p-0">10x</h3>
             <p className={styles.blockFilterDividerItemMessage}>Candidates processed per recruiter</p>
@@ -51,7 +54,7 @@ const ImpactTheNumbersIndexPageSplit = () => (
           <div className={styles.blockFilterDividerItem}>
             <div className={styles.blockFilterDividerItemImage}>
               <img className={styles.blockFilterDividerItemImageHexagon} src={hexagonIcon} alt="Hexagon"/>
-              <img className={styles.blockFilterDividerItemImageIcon} style={{ top: '3.5rem' }} src={sampleIcon} alt="Reduction" title="Reduction" />
+              <img className={styles.blockFilterDividerItemImageIcon} style={{ top: '3.5rem' }} src={automatedIcon} alt="Automated" title="Automated" />
             </div>
             <h3 className="global-hero-glow-white m-0 p-0" style={{ fontSize: '2.5rem', margin: '1rem 0' }}>1,328,921</h3>
             <p className={styles.blockFilterDividerItemMessage}>Automated conversations</p>
