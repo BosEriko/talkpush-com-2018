@@ -1,0 +1,71 @@
+@import '../mixins/mixins';
+.block {
+    &Header {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-image: url(../pages-images/chatbot/header.jpg);
+        background-color: #000;
+        @media screen and (min-width: $break-medium) {
+            background-position: 20rem bottom;
+            position: relative;
+            padding-top: 45%;
+        }
+        &Content {
+            width: 100%;
+            padding: 10rem 1rem;
+            background-color: $semi-black-50;
+            @media screen and (min-width: $break-medium) {
+                right: 0;bottom: 0;left: 0;
+                position: absolute;
+                background-color: transparent;
+                padding: 0;
+            }
+            h1 {
+                font-weight: 100;
+                font-size: 3rem;
+                text-align: center;
+                @media screen and (min-width: $break-medium) {
+                    text-align: left;
+                }
+            }
+        }
+    }
+    &Chat {
+        background-color: black;
+        background-position: center;
+        background-image: url(./../images/grid-bg.png);
+        &Logo {
+            text-align: center;
+            img {
+                height: 7.5rem;
+                vertical-align: bottom;
+                margin-top: 5rem;
+                margin-bottom: 5rem;
+                filter: drop-shadow( 0 0 10px $theme);
+            }
+        }
+        &Title {
+            text-align: center;
+            color: $theme;
+            font-weight: 100;
+            text-shadow: 0 0 20px $theme;
+            font-size: 3rem;
+        }
+        &Message {
+            text-align: center;
+            color: #fff;
+            width: 100%;
+            max-width: 500px;
+            margin: 1.5rem auto 2rem auto;
+            font-size: 1.25rem;
+            line-height: 2rem;
+            opacity: .8;
+        }
+        &Notice {
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+    }
+}
