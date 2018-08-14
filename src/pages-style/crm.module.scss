@@ -48,6 +48,11 @@
             }
             &Image {
                 text-align: center;
+                width: 100%;
+                max-width: 20rem;
+                @media screen and (min-width: $break-medium) {
+                    margin: 0 3rem 0 0;
+                }
                 img {
                     border-width: 2px;
                     border-style: solid;
@@ -56,14 +61,33 @@
                             box-shadow: 0 0 10px $theme;
                     margin-bottom: 1rem;
                     width: 100%;
-                    max-width: 20rem;
                     vertical-align: bottom;
-                    @media screen and (min-width: $break-medium) {
-                        margin: 0 3rem 0 0;
+                }
+                > div {
+                    position: relative;
+                    padding-bottom: 56.25%;
+                    height: 0; overflow: hidden;
+                    border-width: 2px;
+                    border-style: solid;
+                    border-color: $theme;
+                    -webkit-box-shadow: 0 0 10px $theme;
+                            box-shadow: 0 0 10px $theme;
+                    margin-bottom: 1rem;
+                    iframe {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
                     }
                 }
                 &Reverse {
                     text-align: center;
+                    width: 100%;
+                    max-width: 20rem;
+                    @media screen and (min-width: $break-medium) {
+                        margin: 0 0 0 3rem;
+                    }
                     img {
                         border-width: 2px;
                         border-style: solid;
@@ -72,10 +96,24 @@
                                 box-shadow: 0 0 10px $theme;
                         margin-bottom: 1rem;
                         width: 100%;
-                        max-width: 20rem;
                         vertical-align: bottom;
-                        @media screen and (min-width: $break-medium) {
-                            margin: 0 0 0 3rem;
+                    }
+                    > div {
+                        position: relative;
+                        padding-bottom: 56.25%;
+                        height: 0; overflow: hidden;
+                        border-width: 2px;
+                        border-style: solid;
+                        border-color: $theme;
+                        -webkit-box-shadow: 0 0 10px $theme;
+                                box-shadow: 0 0 10px $theme;
+                        margin-bottom: 1rem;
+                        iframe {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
                         }
                     }
                 }
