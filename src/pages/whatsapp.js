@@ -52,7 +52,7 @@ const WhatsAppPage = () => (
         <div className={styles.blockContentItemReverse}>
           <div className={styles.blockContentItemReverseImage}>
             <div className={styles.blockContentItemReverseImageVideo}>
-              <video autoPlay loop>
+              <video autoPlay loop muted>
                 <source src={whatsappVideo} type="video/mp4" />
               </video>
             </div>
