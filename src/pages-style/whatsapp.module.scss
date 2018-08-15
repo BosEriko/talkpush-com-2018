@@ -12,13 +12,15 @@
             padding-top: 45%;
         }
         &Divide {
-            @include display-flex;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
             background-color: $semi-black-50;
+            @media screen and (min-width: $break-medium) {
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                @include display-flex;
+                left: 0;
+                top: 0;
+            }
             &Left {
                 @media screen and (min-width: $break-medium) {
                     @include flex(1);
@@ -34,25 +36,32 @@
                 width: 100%;
                 max-width: 980px;
                 height: 100%;
-                @include display-flex;
-                @include align-items-center;
+                @media screen and (min-width: $break-medium) {
+                    @include display-flex;
+                    @include align-items-center;
+                }
                 &Left {
                     text-align: center;
-                    @include flex(1);
                     color: #fff;
                     text-shadow: 0 0 20px $purple;
                     font-size: 15rem;
+                    padding: 3rem;
+                    @media screen and (min-width: $break-medium) {
+                        @include flex(1);
+                    }
                 }
                 &Right {
                     background-color: $semi-black-50;
-                    width: 50%;
                     height: 100%;
                     color: #fff;
-                    @include display-flex;
-                    -webkit-box-orient: vertical;
-                    -webkit-box-direction: normal;
-                        -ms-flex-direction: column;
-                            flex-direction: column;
+                    @media screen and (min-width: $break-medium) {
+                        width: 50%;
+                        @include display-flex;
+                        -webkit-box-orient: vertical;
+                        -webkit-box-direction: normal;
+                            -ms-flex-direction: column;
+                                flex-direction: column;
+                    }
                     &Fill {
                         @include flex(1);
                     }
