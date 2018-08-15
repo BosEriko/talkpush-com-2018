@@ -99,6 +99,33 @@ const WhatsAppPage = () => (
         </form>
       </div>
     </div>
+    <div className={styles.blockFive}>
+      <div className="container">
+        <h3 className="global-hero-glow-white m-0 p-0">5 reasons to integrate WhatsApp Business with Talkpush CRM</h3>
+        <div className={styles.blockFiveDivider}>
+          <div>
+            <h4>1</h4>
+            <p>Have a 24/7 open door policy: we design and activate a conversational agent (aka “chatbot”) that is ALWAYS ready to answer incoming inquiries from candidates.</p>
+          </div>
+          <div>
+            <h4>2</h4>
+            <p>Help incoming candidates: Candidates have many questions. Which position is right for me? What openings do you have in my vicinity? The Talkpush bot will guide them in real-time to the right job.</p>
+          </div>
+          <div>
+            <h4>3</h4>
+            <p>Screen and schedule: Candidates are asked questions, their answers are analyzed and the shortlisted ones are then automatically scheduled for a face-to-face.</p>
+          </div>
+          <div>
+            <h4>4</h4>
+            <p>Handover from bot to human: On WhatsApp CRM, recruiters take over from bots to talk with the candidate directly. Bye bye emails (and their lower read and response rates).</p>
+          </div>
+          <div>
+            <h4>5</h4>
+            <p>Beyond the job application: Adding a connection on WhatsApp allows you to keep the conversation going beyond the initial job application.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 )
 
