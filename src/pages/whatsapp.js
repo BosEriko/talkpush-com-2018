@@ -73,6 +73,32 @@ const WhatsAppPage = () => (
 
       </div>
     </div>
+    <div className={styles.blockForm}>
+      <div className="container">
+        <h3 className="global-hero-glow-white m-0 p-0">Sign me up for WhatsApp Business Account</h3>
+        <form className={styles.blockFormBlock} id="whatsapp-form">
+          <div className={styles.blockFormBlockDivider}>
+            <div className={styles.blockFormBlockDividerLeft}>
+              <input type="text" name="name" placeholder="Full Name" />
+              <input type="text" name="email" placeholder="E-mail" />
+              <input type="text" name="phone" placeholder="Phone Number" />
+              <input type="text" name="company" placeholder="Company Name" />
+              <input list="whatsapp-form-volume" name="volume" placeholder="Annual Recruitment Volume" />
+              <datalist id="whatsapp-form-volume">
+                <option value="1-100"></option>
+                <option value="100-1000"></option>
+                <option value="1000-10000"></option>
+                <option value="More than 10k"></option>
+              </datalist>
+            </div>
+            <div className={styles.blockFormBlockDividerRight}>
+              <p>Yes! Sign me up. I want to apply for a WhatsApp Business account (which can then be integrated with Talkpush CRM!). By submitting this form, I agree to receive updates from Talkpush. I may unsubscribe at anytime.</p>
+              <button type="submit" className="global-button"><i className="fa fa-send-o" aria-hidden="true"></i><span>Submit</span></button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
 )
 
