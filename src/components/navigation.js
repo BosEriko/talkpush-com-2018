@@ -70,7 +70,7 @@ class Navigation extends React.Component {
             <ul id="servicesDropdownMenu">
               <li><Link activeClassName="activePage" to="/crm"><img src={crmIcon} alt="CRM" />CRM</Link></li>
               <li><Link activeClassName="activePage" to="/chatbot"><img src={chatbotIcon} alt="Chatbot" />Chatbot</Link></li>
-              {/* <li><Link activeClassName="activePage" to="/whatsapp"><img src={chatbotIcon} alt="WhatsApp" />WhatsApp</Link></li> */}
+              <li><Link activeClassName="activePage" to="/whatsapp"><i className="fa fa-whatsapp fa-fw" aria-hidden="true"></i><span style={{ paddingLeft: '.5rem' }}>WhatsApp</span></Link></li>
             </ul>
           </li>
           <li><a href="https://blog.talkpush.com/" target="_blank">Blog</a></li>
