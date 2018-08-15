@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import styles from '../pages-style/whatsapp.module.scss'
 
 const pageVariables = {
   pageCode: 'whatsapp',
@@ -7,7 +8,7 @@ const pageVariables = {
 }
 
 const WhatsAppPage = () => (
-  <div>
+  <div className={styles.block}>
     <Helmet>
       <title>{pageVariables.pageCode}</title>
       <meta name='description' content={pageVariables.pageDescription} />

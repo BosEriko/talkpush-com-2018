@@ -6,6 +6,11 @@ import './style/header.scss'
 import crmIcon from '../icons/crm.svg'
 import chatbotIcon from '../icons/chatbot.svg'
 
+import ourStyleIcon from '../icons/about/our-style.svg'
+import ourTeamIcon from '../icons/about/our-team.svg'
+import joinOurTeamIcon from '../icons/about/join-our-team.svg'
+import galleryIcon from '../icons/about/gallery.svg'
+
 class Navigation extends React.Component {
   calendlyPopUp = () => {
     Calendly.showPopupWidget('https://calendly.com/talkpush-demo/talkpush-intro-demo/');
@@ -52,10 +57,10 @@ class Navigation extends React.Component {
           <li>
             <span id="aboutDropdownToggle">About<i className="fa fa-angle-down" aria-hidden="true"></i></span>
             <ul id="aboutDropdownMenu">
-              <li><Link activeClassName="activePage" to="/our-style"><img src={chatbotIcon} alt="Our Style" />Our Style</Link></li>
-              <li><Link activeClassName="activePage" to="/our-team"><img src={chatbotIcon} alt="Chatbot" />Our Team</Link></li>
-              <li><Link activeClassName="activePage" to="/jobs"><img src={chatbotIcon} alt="Join Our Team" />Join Our Team</Link></li>
-              <li><Link activeClassName="activePage" to="/gallery"><img src={chatbotIcon} alt="Gallery" />Gallery</Link></li>
+              <li><Link activeClassName="activePage" to="/our-style"><img src={ourStyleIcon} alt="Our Style" />Our Style</Link></li>
+              <li><Link activeClassName="activePage" to="/our-team"><img src={ourTeamIcon} alt="Chatbot" />Our Team</Link></li>
+              <li><Link activeClassName="activePage" to="/jobs"><img src={joinOurTeamIcon} alt="Join Our Team" />Join Our Team</Link></li>
+              <li><Link activeClassName="activePage" to="/gallery"><img src={galleryIcon} alt="Gallery" />Gallery</Link></li>
             </ul>
           </li>
           <li><Link activeClassName="activePage" to="/jobs">Career</Link></li>
