@@ -1,6 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import styles from '../pages-style/whatsapp.module.scss'
+import whatsAppUser from '../pages-images/whatsapp/whatsapp-user.png'
 
 const pageVariables = {
   pageCode: 'whatsapp',
@@ -32,7 +33,21 @@ const WhatsAppPage = () => (
       </div>
     </div>
     <div className={styles.blockContent}>
-      hohoho
+      <div className="container">
+
+        <div className={styles.blockContentItem}>
+          <div className={styles.blockContentItemImage}>
+            <img src={whatsAppUser} alt="WhatsApp User"/>
+          </div>
+          <div className={styles.blockContentItemContent}>
+            <h3 className="global-hero-glow-green">Reach 1.5 billion active users</h3>
+            <p>WhatsApp Business + Talkpush CRM = an enjoyable candidate experience.</p>
+            <p>Talkpush CRM was designed for messaging. It was initially built to support SMS/Text messaging, and later added the integration with Facebook Messenger as soon as the API became available (summer 2016).</p>
+            <p>We believe that employers have a responsibility to treat candidates with the same love and care as they treat customers. This starts with designing a recruitment process which makes the life of their candidates simple. Offering candidates a digital assistant which can direct their applications via their favorite messaging app is a big step in the right direction.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
 )

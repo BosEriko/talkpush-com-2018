@@ -87,4 +87,44 @@
             }
         }
     }
+    &Content {
+        background-color: black;
+        background-position: center;
+        background-image: url(./../images/grid-bg.png);
+        &Item {
+            padding: 5rem 0;
+            @media screen and (min-width: $break-medium) {
+                @include display-flex;
+                @include align-items-center;
+            }
+            &Image {
+                img {
+                    width: 25rem;
+                    border-width: 2px;
+                    border-color: $theme;
+                    border-style: solid;
+                    box-shadow: 0 0 10px $theme;
+                    margin-right: 3rem;
+                    vertical-align: bottom;
+                }
+            }
+            &Content {
+                color: #fff;
+                h3 {
+                    font-weight: 100;
+                    font-size: 2rem;
+                    color: $theme;
+                }
+                p {
+                    color: #aaa;
+                    font-size: 1rem;
+                    line-height: 2rem;
+                    &:last-child {
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
 }
