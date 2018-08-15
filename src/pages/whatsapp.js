@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import styles from '../pages-style/whatsapp.module.scss'
 import whatsAppUser from '../pages-images/whatsapp/whatsapp-user.png'
 import iphoneFrame from '../pages-images/whatsapp/iphone-frame.png'
+import whatsappVideo from '../pages-images/whatsapp/video.mp4'
 
 const pageVariables = {
   pageCode: 'whatsapp',
@@ -38,7 +39,7 @@ const WhatsAppPage = () => (
 
         <div className={styles.blockContentItem}>
           <div className={styles.blockContentItemImage}>
-            <img src={whatsAppUser} alt="WhatsApp User"/>
+            <img src={whatsAppUser} alt="WhatsApp User" />
           </div>
           <div className={styles.blockContentItemContent}>
             <h3 className="global-hero-glow-green">Reach 1.5 billion active users</h3>
@@ -50,7 +51,12 @@ const WhatsAppPage = () => (
 
         <div className={styles.blockContentItemReverse}>
           <div className={styles.blockContentItemReverseImage}>
-            <img src={whatsAppUser} alt="WhatsApp User"/>
+            <div className={styles.blockContentItemReverseImageVideo}>
+              <video autoPlay loop>
+                <source src={whatsappVideo} type="video/mp4" />
+              </video>
+            </div>
+            <img src={iphoneFrame} alt="WhatsApp User" />
           </div>
           <div className={styles.blockContentItemReverseContent}>
             <h3 className="global-hero-glow-green">Your talent pool lives on WhatsApp</h3>
