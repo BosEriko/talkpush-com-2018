@@ -98,18 +98,23 @@
                 @include align-items-center;
             }
             &Image {
+                text-align: center;
                 img {
                     width: 25rem;
                     border-width: 2px;
                     border-color: $theme;
                     border-style: solid;
-                    box-shadow: 0 0 10px $theme;
+                    -webkit-box-shadow: 0 0 10px $theme;
+                            box-shadow: 0 0 10px $theme;
                     margin-right: 3rem;
                     vertical-align: bottom;
                 }
             }
             &Content {
                 color: #fff;
+                @media screen and (min-width: $break-medium) {
+                    @include flex(1);
+                }
                 h3 {
                     font-weight: 100;
                     font-size: 2rem;
@@ -122,6 +127,62 @@
                     &:last-child {
                         margin: 0;
                         padding: 0;
+                    }
+                }
+                ul {
+                    color: #aaa;
+                    li:not(:last-child) {
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+        }
+        &ItemReverse {
+            padding: 5rem 0;
+            @media screen and (min-width: $break-medium) {
+                @include display-flex;
+                @include align-items-center;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: reverse;
+                    -ms-flex-direction: row-reverse;
+                        flex-direction: row-reverse;
+            }
+            &Image {
+                text-align: center;
+                img {
+                    width: 25rem;
+                    border-width: 2px;
+                    border-color: $theme;
+                    border-style: solid;
+                    -webkit-box-shadow: 0 0 10px $theme;
+                            box-shadow: 0 0 10px $theme;
+                    margin-left: 3rem;
+                    vertical-align: bottom;
+                }
+            }
+            &Content {
+                color: #fff;
+                @media screen and (min-width: $break-medium) {
+                    @include flex(1);
+                }
+                h3 {
+                    font-weight: 100;
+                    font-size: 2rem;
+                    color: $theme;
+                }
+                p {
+                    color: #aaa;
+                    font-size: 1rem;
+                    line-height: 2rem;
+                    &:last-child {
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+                ul {
+                    color: #aaa;
+                    li:not(:last-child) {
+                        margin-bottom: 1rem;
                     }
                 }
             }
