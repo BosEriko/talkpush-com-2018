@@ -21,6 +21,7 @@ import apiImage from '../pages-images/crm/api.jpg'
 const pageVariables = {
   pageCode: 'crm',
   pageDescription: 'Candidate Relationship Management for the messaging age',
+  pageTitle: 'CRM',
 }
 
 const calendlyPopUp = () => {
@@ -53,10 +54,10 @@ const crmItem = (reverse, photo, title, paragraph, icon, linkDestination, linkTe
   )
 }
 
-const CrmPage = () => (
+const CrmPage = ({ siteTitle }) => (
   <div className={styles.block}>
     <Helmet>
-      <title>{pageVariables.pageCode}</title>
+      <title>{pageVariables.pageTitle} - {siteTitle}</title>
       <meta name='description' content={pageVariables.pageDescription} />
       <meta property='og:description' content={pageVariables.pageDescription} />
     </Helmet>

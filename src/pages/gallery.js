@@ -36,7 +36,8 @@ class GalleryPage extends React.Component {
     activeLink: {
       color: '#72de2f',
       textShadow: '0 0 10px #72de2f'
-    }
+    },
+    pageTitle: 'Gallery',
   }
 
   galleryItem = (image, name, description) => {
@@ -64,7 +65,7 @@ class GalleryPage extends React.Component {
     return (
       <div className={styles.block}>
         <Helmet>
-          <title>{this.pageVariables.pageCode}</title>
+          <title>{this.pageVariables.pageTitle} - {this.props.siteTitle}</title>
           <meta name='description' content={this.pageVariables.pageDescription} />
           <meta property='og:description' content={this.pageVariables.pageDescription} />
         </Helmet>

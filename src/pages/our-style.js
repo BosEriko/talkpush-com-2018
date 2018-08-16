@@ -9,12 +9,13 @@ import joinIcon from '../pages-images/our-style/join-icon.svg'
 const pageVariables = {
   pageCode: 'our-style',
   pageDescription: 'Talkpush was built to give everyone a chance to let their talent talk. Removing barriers between job seekers and employers has been our mission from day one.',
+  pageTitle: 'Our Style',
 }
 
-const OurStylePage = () => (
+const OurStylePage = ({ siteTitle }) => (
   <div className={styles.block}>
     <Helmet>
-      <title>{pageVariables.pageCode}</title>
+      <title>{pageVariables.pageTitle} - {siteTitle}</title>
       <meta name='description' content={pageVariables.pageDescription} />
       <meta property='og:description' content={pageVariables.pageDescription} />
     </Helmet>

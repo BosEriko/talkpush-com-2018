@@ -34,6 +34,7 @@ class JobsPage extends React.Component {
   pageVariables = {
     pageCode: 'jobs',
     pageDescription: 'Ready to accelerate recruitment? Talkpush is the leading productivity platform and the most high-volume chatbot for hiring talent via Facebook, WeChat and messaging.',
+    pageTitle: 'Jobs',
   }
 
   componentDidMount() {
@@ -62,7 +63,7 @@ class JobsPage extends React.Component {
     return (
       <div className={styles.block}>
         <Helmet>
-          <title>{this.pageVariables.pageCode}</title>
+          <title>{this.pageVariables.pageTitle} - {this.props.siteTitle}</title>
           <meta name='description' content={this.pageVariables.pageDescription} />
           <meta property='og:description' content={this.pageVariables.pageDescription} />
         </Helmet>

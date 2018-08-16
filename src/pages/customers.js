@@ -8,6 +8,7 @@ class CustomersPage extends React.Component {
   pageVariables = {
     pageCode: 'customers',
     pageDescription: 'Customers who want to accelerate their hiring turn to Talkpush',
+    pageTitle: 'Customers',
   }
 
   enterCDB = (id) => {
@@ -58,7 +59,7 @@ class CustomersPage extends React.Component {
     return (
       <div className={styles.block}>
         <Helmet>
-          <title>{this.pageVariables.pageCode}</title>
+          <title>{this.pageVariables.pageTitle} - {this.props.siteTitle}</title>
           <meta name='description' content={this.pageVariables.pageDescription} />
           <meta property='og:description' content={this.pageVariables.pageDescription} />
         </Helmet>

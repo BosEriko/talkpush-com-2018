@@ -11,12 +11,13 @@ const pageVariables = {
   animationSpeed: '800',
   animationOnce: 'true',
   pageDescription: 'Ready to accelerate recruitment? Talkpush is the leading productivity platform and the most high-volume chatbot for hiring talent via Facebook, WeChat and messaging.',
+  pageTitle: 'Let your talent talk | Recruitment Chatbot Platform',
 }
 
-const IndexPage = () => (
+const IndexPage = ({ siteTitle }) => (
   <div>
     <Helmet>
-      <title>{pageVariables.pageCode}</title>
+      <title>{siteTitle} - {pageVariables.pageTitle}</title>
       <meta name='description' content={pageVariables.pageDescription} />
       <meta property='og:description' content={pageVariables.pageDescription} />
     </Helmet>

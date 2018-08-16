@@ -27,20 +27,20 @@ const facebookLiveChatScript = () => {
   }
 }
 
-const Layout = ({ children, data }) => (
+const Layout = (props) => (
   <div>
     <Helmet>
-      <title>{data.site.siteMetadata.title} - {data.site.siteMetadata.description}</title>
-      <meta name='keywords' content={data.site.siteMetadata.metaKeywords} />
-      <meta property='og:site_name' content={data.site.siteMetadata.title} />
-      <meta property='og:title' content={data.site.siteMetadata.title} />
+      <title>{props.data.site.siteMetadata.title} - {props.data.site.siteMetadata.description}</title>
+      <meta name='keywords' content={props.data.site.siteMetadata.metaKeywords} />
+      <meta property='og:site_name' content={props.data.site.siteMetadata.title} />
+      <meta property='og:title' content={props.data.site.siteMetadata.title} />
       <meta property='og:type' content='website' />
-      <meta property='og:image' content={data.site.siteMetadata.image} itemprop='image' />
+      <meta property='og:image' content={props.data.site.siteMetadata.image} itemprop='image' />
       <script>{facebookLiveChatScript()}</script>
     </Helmet>
-    <Header title={data.site.siteMetadata.title} />
-    <div>{children()}</div>
-    <Footer title={data.site.siteMetadata.title} />
+    <Header title={props.data.site.siteMetadata.title} />
+    <div>{props.children({...props, ...{ siteTitle: props.data.site.siteMetadata.title }})}</div>
+    <Footer title={props.data.site.siteMetadata.title} />
   </div>
 )
 

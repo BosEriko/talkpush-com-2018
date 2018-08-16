@@ -7,13 +7,14 @@ import Link from 'gatsby-link'
 const pageVariables = {
   pageCode: 'our-team',
   pageDescription: 'Talkpush was built to give everyone a chance to let their talent talk. Removing barriers between job seekers and employers has been our mission from day one.',
+  pageTitle: 'Our Team',
 }
 
 
-const OurTeamPage = () => (
+const OurTeamPage = ({ siteTitle }) => (
   <div className={styles.block}>
     <Helmet>
-      <title>{pageVariables.pageCode}</title>
+      <title>{pageVariables.pageTitle} - {siteTitle}</title>
       <meta name='description' content={pageVariables.pageDescription} />
       <meta property='og:description' content={pageVariables.pageDescription} />
     </Helmet>

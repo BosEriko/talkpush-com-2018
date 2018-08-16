@@ -8,12 +8,13 @@ import whatsappVideo from '../pages-images/whatsapp/video.mp4'
 const pageVariables = {
   pageCode: 'whatsapp',
   pageDescription: 'WhatsApp',
+  pageTitle: 'WhatsApp',
 }
 
-const WhatsAppPage = () => (
+const WhatsAppPage = ({ siteTitle }) => (
   <div className={styles.block}>
     <Helmet>
-      <title>{pageVariables.pageCode}</title>
+      <title>{pageVariables.pageTitle} - {siteTitle}</title>
       <meta name='description' content={pageVariables.pageDescription} />
       <meta property='og:description' content={pageVariables.pageDescription} />
     </Helmet>
