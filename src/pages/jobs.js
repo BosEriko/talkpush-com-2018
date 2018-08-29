@@ -87,7 +87,7 @@ class JobsPage extends React.Component {
               </a>
               <a href="#" onClick={this.openModal} className="global-button">
                 <i className="fa fa-globe fa-fw" aria-hidden="true"></i>
-                <span>Our Location</span>
+                <span>Our Locations</span>
               </a>
             </div>
             <div className={styles.blockHeaderContentFill}></div>
