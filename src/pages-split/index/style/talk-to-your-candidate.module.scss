@@ -37,7 +37,7 @@
         @include align-items-center;
         @media screen and (min-width: $break-medium) {
             width: 100%;
-            max-width: 500px;
+            max-width: 575px;
             padding: 0;
         }
         &Content{
@@ -47,8 +47,8 @@
                 padding: 0 2rem 0 0;
             }
             h1 {
-                font-size: 4rem;
-                line-height: 4.2rem;
+                font-size: 3rem;
+                line-height: 3.5rem;
                 font-weight: 100;
             }
             p {
