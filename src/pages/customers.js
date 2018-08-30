@@ -92,7 +92,7 @@ class CustomersPage extends React.Component {
         <div className={styles.blockHeader}>
           <div className={styles.blockHeaderContent}>
             <h1 className="global-hero-glow-white">Customers who let their talent talk</h1>
-            <p>"Customers come to us when they want to remove any barrier that stands between them and their next great hire."</p>
+            <p>Customers come to us when they want to remove any barrier that stands between them and their next great hire.</p>
           </div>
         </div>
         <div className="customers-icons">
