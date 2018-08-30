@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import styles from '../pages-style/customers.module.scss'
 import '../pages-style/customers.scss'
+
 import logo247 from '../pages-images/customers/247-logo.svg'
 
 class CustomersPage extends React.Component {
@@ -21,7 +22,7 @@ class CustomersPage extends React.Component {
     document.getElementById("customer-shadow").style.display = "none"
   }
 
-  blockItem = (id) => {
+  blockItem = (id, logoWhite, logoBlack, companyName, region) => {
     return (
       <div className="block">
         <div className="dimension-holder customer-dimension-box" onMouseEnter={() => this.enterCDB(id)} onMouseLeave={() => this.leaveCDB(id)}>
@@ -30,7 +31,7 @@ class CustomersPage extends React.Component {
               <div className="logo-dimension">
                 <div className="logo-holder">
                   <div className="logo-center">
-                    <img src={logo247} alt="247" />
+                    <img src={logoWhite} alt={id} />
                   </div>
                 </div>
               </div>
@@ -39,14 +40,14 @@ class CustomersPage extends React.Component {
               <div className="logo-dimension">
                 <div className="logo-holder">
                   <div className="logo-center">
-                    <img src={logo247} alt="247" />
+                    <img src={logoBlack} alt={id} />
                   </div>
                 </div>
               </div>
-              <h3>Prudential</h3>
+              <h3>{companyName}</h3>
               <h4>
                 <i className="fa fa-globe fa-fw" aria-hidden='true'></i>
-                <span>South East Asia</span>
+                <span>{region}</span>
               </h4>
             </div>
           </div>
@@ -73,15 +74,7 @@ class CustomersPage extends React.Component {
           <div className="container">
             <div className="divider">
               <div className="shadow" id="customer-shadow"></div>
-              {this.blockItem("1")}
-              {this.blockItem("2")}
-              {this.blockItem("3")}
-              {this.blockItem("4")}
-              {this.blockItem("5")}
-              {this.blockItem("6")}
-              {this.blockItem("7")}
-              {this.blockItem("8")}
-              {this.blockItem("9")}
+              {this.blockItem("247", logo247, logo247, "Prudential", "South East Asia")}
             </div>
           </div>
         </div>
