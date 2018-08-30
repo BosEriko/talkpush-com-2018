@@ -3,7 +3,10 @@ import Helmet from 'react-helmet'
 import styles from '../pages-style/customers.module.scss'
 import '../pages-style/customers.scss'
 
-import logo247 from '../pages-images/customers/247-logo.svg'
+import prudentialNeon from '../pages-images/customers/prudential/neon.svg'
+import prudentialBlack from '../pages-images/customers/prudential/black.svg'
+import starwoodNeon from '../pages-images/customers/starwood/neon.svg'
+import starwoodBlack from '../pages-images/customers/starwood/black.svg'
 
 class CustomersPage extends React.Component {
   pageVariables = {
@@ -22,7 +25,7 @@ class CustomersPage extends React.Component {
     document.getElementById("customer-shadow").style.display = "none"
   }
 
-  blockItem = (id, logoWhite, logoBlack, companyName, region) => {
+  blockItem = (id, logoNeon, logoBlack, companyName, region, videoID, articleLink) => {
     return (
       <div className="block">
         <div className="dimension-holder customer-dimension-box" onMouseEnter={() => this.enterCDB(id)} onMouseLeave={() => this.leaveCDB(id)}>
@@ -31,7 +34,7 @@ class CustomersPage extends React.Component {
               <div className="logo-dimension">
                 <div className="logo-holder">
                   <div className="logo-center">
-                    <img src={logoWhite} alt={id} />
+                    <img src={logoNeon} alt={id} />
                   </div>
                 </div>
               </div>
@@ -49,6 +52,8 @@ class CustomersPage extends React.Component {
                 <i className="fa fa-globe fa-fw" aria-hidden='true'></i>
                 <span>{region}</span>
               </h4>
+              { videoID && <a className="button" href={ "https://www.youtube.com/watch?v=" + videoID } target="_blank">Watch Video</a> }
+              { articleLink && <a className="button gray" href={ articleLink } target="_blank">Read Case Study</a> }
             </div>
           </div>
         </div>
@@ -74,7 +79,8 @@ class CustomersPage extends React.Component {
           <div className="container">
             <div className="divider">
               <div className="shadow" id="customer-shadow"></div>
-              {this.blockItem("247", logo247, logo247, "Prudential", "South East Asia")}
+              {this.blockItem("prudential", prudentialNeon, prudentialBlack, "The Real Life Company", "South East Asia", false, false)}
+              {this.blockItem("starwood", starwoodNeon, starwoodBlack, "Starwood", "China", "nFRDqo_rc3o", false)}
             </div>
           </div>
         </div>
