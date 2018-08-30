@@ -7,6 +7,10 @@ import prudentialNeon from '../pages-images/customers/prudential/neon.svg'
 import prudentialBlack from '../pages-images/customers/prudential/black.svg'
 import starwoodNeon from '../pages-images/customers/starwood/neon.svg'
 import starwoodBlack from '../pages-images/customers/starwood/black.svg'
+import alexanderNeon from '../pages-images/customers/alexander/neon.svg'
+import alexanderBlack from '../pages-images/customers/alexander/black.svg'
+import psgNeon from '../pages-images/customers/psg/neon.svg'
+import psgBlack from '../pages-images/customers/psg/black.svg'
 
 class CustomersPage extends React.Component {
   pageVariables = {
@@ -81,6 +85,8 @@ class CustomersPage extends React.Component {
               <div className="shadow" id="customer-shadow"></div>
               {this.blockItem("prudential", prudentialNeon, prudentialBlack, "The Real Life Company", "South East Asia", false, false)}
               {this.blockItem("starwood", starwoodNeon, starwoodBlack, "Starwood", "China", "nFRDqo_rc3o", false)}
+              {this.blockItem("alexander", alexanderNeon, alexanderBlack, "Alexander Mann", "South East Asia", false, false)}
+              {this.blockItem("psg", psgNeon, psgBlack, "PSG Global Solutions", "Global", false, false)}
             </div>
           </div>
         </div>
