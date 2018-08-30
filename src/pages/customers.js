@@ -19,6 +19,8 @@ import genpactNeon from '../pages-images/customers/genpact/neon.svg'
 import genpactBlack from '../pages-images/customers/genpact/black.svg'
 import afniNeon from '../pages-images/customers/afni/neon.png'
 import afniBlack from '../pages-images/customers/afni/black.png'
+import hgsNeon from '../pages-images/customers/hgs/neon.svg'
+import hgsBlack from '../pages-images/customers/hgs/black.svg'
 
 class CustomersPage extends React.Component {
   pageVariables = {
@@ -99,6 +101,7 @@ class CustomersPage extends React.Component {
               {this.blockItem("alorica", aloricaNeon, aloricaBlack, "Alorica", "Global", "ciSB3gMpH_g", false)}
               {this.blockItem("genpact", genpactNeon, genpactBlack, "Genpact", "Global", "g4i0vKSu0f4", false)}
               {this.blockItem("afni", afniNeon, afniBlack, "Afni", "Philippines", "lvYOmb8OVPE", "https://blog.talkpush.com/afni-welcomes-stanley-the-chatbot-9032c8e1b5f0")}
+              {this.blockItem("hgs", hgsNeon, hgsBlack, "HGS", "US, India", false, false)}
             </div>
           </div>
         </div>
