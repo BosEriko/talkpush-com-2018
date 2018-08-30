@@ -11,6 +11,8 @@ import alexanderNeon from '../pages-images/customers/alexander/neon.svg'
 import alexanderBlack from '../pages-images/customers/alexander/black.svg'
 import psgNeon from '../pages-images/customers/psg/neon.svg'
 import psgBlack from '../pages-images/customers/psg/black.svg'
+import sykesNeon from '../pages-images/customers/sykes/neon.png'
+import sykesBlack from '../pages-images/customers/sykes/black.png'
 
 class CustomersPage extends React.Component {
   pageVariables = {
@@ -87,6 +89,7 @@ class CustomersPage extends React.Component {
               {this.blockItem("starwood", starwoodNeon, starwoodBlack, "Starwood", "China", "nFRDqo_rc3o", false)}
               {this.blockItem("alexander", alexanderNeon, alexanderBlack, "Alexander Mann", "South East Asia", false, false)}
               {this.blockItem("psg", psgNeon, psgBlack, "PSG Global Solutions", "Global", false, false)}
+              {this.blockItem("sykes", sykesNeon, sykesBlack, "Sykes", "Philippines, Latin America", false, "https://medium.com/@perrine.issachar/a7641b6e1285")}
             </div>
           </div>
         </div>
