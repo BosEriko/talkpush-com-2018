@@ -37,7 +37,7 @@
         @include align-items-center;
         @media screen and (min-width: $break-medium) {
             width: 100%;
-            max-width: 575px;
+            max-width: 500px;
             padding: 0;
         }
         &Content{
