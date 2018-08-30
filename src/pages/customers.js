@@ -15,6 +15,8 @@ import sykesNeon from '../pages-images/customers/sykes/neon.png'
 import sykesBlack from '../pages-images/customers/sykes/black.png'
 import aloricaNeon from '../pages-images/customers/alorica/neon.svg'
 import aloricaBlack from '../pages-images/customers/alorica/black.svg'
+import genpactNeon from '../pages-images/customers/genpact/neon.svg'
+import genpactBlack from '../pages-images/customers/genpact/black.svg'
 
 class CustomersPage extends React.Component {
   pageVariables = {
@@ -93,6 +95,7 @@ class CustomersPage extends React.Component {
               {this.blockItem("psg", psgNeon, psgBlack, "PSG Global Solutions", "Global", false, false)}
               {this.blockItem("sykes", sykesNeon, sykesBlack, "Sykes", "Philippines, Latin America", false, "https://medium.com/@perrine.issachar/a7641b6e1285")}
               {this.blockItem("alorica", aloricaNeon, aloricaBlack, "Alorica", "Global", "ciSB3gMpH_g", false)}
+              {this.blockItem("genpact", genpactNeon, genpactBlack, "Genpact", "Global", "g4i0vKSu0f4", false)}
             </div>
           </div>
         </div>
