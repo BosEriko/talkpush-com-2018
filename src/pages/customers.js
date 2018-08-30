@@ -21,6 +21,12 @@ import afniNeon from '../pages-images/customers/afni/neon.png'
 import afniBlack from '../pages-images/customers/afni/black.png'
 import hgsNeon from '../pages-images/customers/hgs/neon.svg'
 import hgsBlack from '../pages-images/customers/hgs/black.svg'
+import exlNeon from '../pages-images/customers/exl/neon.svg'
+import exlBlack from '../pages-images/customers/exl/black.svg'
+import _247Neon from '../pages-images/customers/247/neon.svg'
+import _247Black from '../pages-images/customers/247/black.svg'
+import valorglobalNeon from '../pages-images/customers/valorglobal/neon.svg'
+import valorglobalBlack from '../pages-images/customers/valorglobal/black.svg'
 
 class CustomersPage extends React.Component {
   pageVariables = {
@@ -102,6 +108,9 @@ class CustomersPage extends React.Component {
               {this.blockItem("genpact", genpactNeon, genpactBlack, "Genpact", "Global", "g4i0vKSu0f4", false)}
               {this.blockItem("afni", afniNeon, afniBlack, "Afni", "Philippines", "lvYOmb8OVPE", "https://blog.talkpush.com/afni-welcomes-stanley-the-chatbot-9032c8e1b5f0")}
               {this.blockItem("hgs", hgsNeon, hgsBlack, "HGS", "US, India", false, false)}
+              {this.blockItem("exl", exlNeon, exlBlack, "EXL", "Philippines", false, false)}
+              {this.blockItem("247", _247Neon, _247Black, "[24]7.ai", "Philippines", "Vpu8HkBHShw", false)}
+              {this.blockItem("valorglobal", valorglobalNeon, valorglobalBlack, "Valor Global", "Costa Rica", "_swxOnvC0go", false)}
             </div>
           </div>
         </div>
