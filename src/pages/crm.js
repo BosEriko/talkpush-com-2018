@@ -71,7 +71,7 @@ const CrmPage = ({ siteTitle }) => (
     <div className={styles.blockContent}>
       <div className="container">
         {crmItem(false, conversationsImage, "Conversations over forms", "Talkpush captures information from resumes or forms, but Talkpush goes beyond other recruitment systems. With the job application process handled like a conversation, your candidates can begin their journey with a simple “hello”. Conversations keep them engaged and improve your conversion rates.", overFormsIcon, "#", "See it in action", calendlyPopUp)}
-        {crmItem(true, talentTalkImage, "Let the talent talk", "Resumes are nice, but they only tell a small part of the story. If you want to know a candidate, you need to listen to them. By asking candidates to record audio and video responses during the application, recruiters can evaluate communications and language skills as well as the ability to think on their feet.", talentTalkIcon, "#", "Book a Demo", calendlyPopUp)}
+        {crmItem(true, talentTalkImage, "Let the talent talk", "Resumes are nice, but they only tell a small part of the story. If you want to know a candidate, you need to listen to them. By asking candidates to record audio and video responses during the application, recruiters can evaluate communications and language skills as well as the ability to think on their feet.", talentTalkIcon, "#", "Request a Demo", calendlyPopUp)}
         {crmItem(false, multichannelImage, "Multichannel", "Don’t make it harder for good talent to find you. Open all communications channels: job boards, phone lines, social media... On Talkpush, you can chat with thousands of candidates via SMS, Facebook or voice and automate as much or as little of that conversation as you’d like.", multichannelIcon, "#", "Talk to us about Marketing", calendlyPopUp)}
         {crmItem(true, false, "Speed is everything", "In recruitment, speed is everything. A candidate in high demand will most likely end up working for the employer who has responded first. Talkpush helps recruiters minimize the response time to candidates by 80%. Every time a candidate moves to a new stage of the process, new actions are triggered ensuring that the best candidates are fast tracked and that every candidate is kept informed.", speedIcon, "#", false, false)}
         {crmItem(false, buildingImage, "Building and maintaining relationships at scale", "With inboxes polluted with spam and poorly targeted offers, it’s no wonder that email marketing is on its last legs... Talkpush allows you to manage your talent pool via to personalized one-on-one conversations over SMS or messaging apps.", buildingIcon, "#", false, false)}
@@ -85,7 +85,7 @@ const CrmPage = ({ siteTitle }) => (
       <h3 className="global-hero-glow-green m-0 p-0">Ready to get started?</h3>
       <a href="#" onClick={calendlyPopUp} className="global-button">
         <i className="fa fa-send-o fa-fw" aria-hidden="true"></i>
-        <span>Book a Demo</span>
+        <span>Request a Demo</span>
       </a>
     </div>
   </div>
