@@ -104,6 +104,8 @@
                     li {
                         display: inline-block;
                         a {
+                            display: inline-block;
+                            min-width: 6rem;
                             &.active {
                                 background-color: $theme;
                                 text-shadow: none;
