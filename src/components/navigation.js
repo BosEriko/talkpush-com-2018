@@ -74,7 +74,7 @@ class Navigation extends React.Component {
             </ul>
           </li>
           <li><a href="https://blog.talkpush.com/" target="_blank">Blog</a></li>
-          <li><a href="#" onClick={this.calendlyPopUp}><i className="fa fa-send-o fa-fw" aria-hidden="true"></i>Request a Demo</a></li>
+          <li><a href="#" onClick={this.calendlyPopUp}><i className="fa fa-send-o fa-fw" aria-hidden="true"></i>Request Demo</a></li>
         </ul>
       </div>
     )

@@ -36,7 +36,6 @@ header {
   right: 0;
   top: 0;
   z-index: 2;
-  text-transform: lowercase;
 
   @media screen and (min-width: $break-medium) {
     background-color: transparent;
@@ -364,6 +363,7 @@ header {
                 color: #fff;
                 padding: 10px 20px;
                 text-decoration: none;
+                text-transform: uppercase;
               }
 
               &:before {

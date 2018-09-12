@@ -65,7 +65,7 @@
     }
 }
 .bigButtonHolder {
-    text-transform: lowercase;
+    text-transform: uppercase;
     padding-bottom: 2rem;
     a {
         background-color: $semi-theme-25;
@@ -80,7 +80,6 @@
     }
 }
 .otherButtonHolder {
-    text-transform: lowercase;
     @media screen and (min-width: $break-medium) {
         @include display-flex;
     }

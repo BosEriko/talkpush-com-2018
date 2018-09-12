@@ -32,60 +32,30 @@
             height: 30rem;
             img {
                 max-width: 100%;
-                max-height: 25rem;
+                max-height: 100%;
                 position: absolute;
                 @media screen and (min-width: $break-medium) {
                     max-height: 100%;
                 }
             }
             &Laptop {
-                &Inactive {
-                    z-index: 1;
-                    // For Inactive Only
-                    opacity: .5;
-                    // Status
-                    display: inline-block;
-                    @media screen and (min-width: $break-medium) {
-                        bottom: 50%;
-                        transform: translateY(50%);
-                        left: 5rem;
-                        width: 75%;
-                    }
-                }
-                &Active {
-                    z-index: 2;
-                    // Display Status
-                    display: none;
-                    @media screen and (min-width: $break-medium) {
-                        bottom: 50%;
-                        transform: translateY(50%);
-                        left: 5rem;
-                        width: 75%;
-                    }
+                transform: translateX(-50%);
+                left: 40%;
+                @media screen and (min-width: $break-medium) {
+                    transform: none;
+                    width: 90%;
+                    left: 0;
+                    top: 0;
                 }
             }
             &Mobile {
-                &Inactive {
-                    z-index: 1;
-                    // For Inactive Only
-                    opacity: .5;
-                    // Display Status
-                    display: none;
-                    @media screen and (min-width: $break-medium) {
-                        bottom: 0;
-                        left: 2rem;
-                        height: 100%;
-                    }
-                }
-                &Active {
-                    z-index: 2;
-                    // Display Status
-                    display: inline-block;
-                    @media screen and (min-width: $break-medium) {
-                        bottom: 0;
-                        left: 2rem;
-                        height: 100%;
-                    }
+                right: 50%;
+                transform: translateX(70%);
+                @media screen and (min-width: $break-medium) {
+                    transform: none;
+                    height: 18rem;
+                    right: 0;
+                    top: 7rem;
                 }
             }
         }
@@ -93,26 +63,6 @@
             padding: 2rem;
             @media screen and (min-width: $break-medium) {
                 padding: 0;
-            }
-            &ToggleButton {
-                display: inline-block;
-                ul {
-                    list-style-type: none;
-                    display: inline-block;
-                    margin: 0 2rem 0 0;
-                    padding: 0;
-                    li {
-                        display: inline-block;
-                        a {
-                            display: inline-block;
-                            min-width: 6rem;
-                            &.active {
-                                background-color: $theme;
-                                text-shadow: none;
-                            }
-                        }
-                    }
-                }
             }
             &CrmButton {
                 display: inline-block;
