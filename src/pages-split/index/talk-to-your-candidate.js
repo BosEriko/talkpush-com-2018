@@ -15,9 +15,9 @@ const TalkToYourCandidateIndexPageSplit = () => (
       <div className={styles.contentLeft}>
         {/* Content Start */}
         <div className={styles.contentLeftContent}>
-          <h1 className="global-hero-glow-white text-uppercase m-0 p-0">AI Powered Recruitment</h1>
-          <h1 className="global-hero-glow-green text-uppercase m-0 p-0">Platform</h1>
-          <p>Recruiting is pretty simple: get your recruiters and your candidates to talk to each other and watch good things happen. Talkpush is the first conversation-driven Candidate Relationship Management (CRM) system.</p>
+          <h1 className="global-hero-glow-white text-uppercase m-0 p-0">Level up</h1>
+          <h1 className="global-hero-glow-green text-uppercase m-0 p-0">your Recruitment Experience</h1>
+          <p>Recruiting is pretty simple: get your recruiters and your candidates to talk to each other and watch good things happen. Talkpush is the conversational Candidate Relationship Management (CRM) system.</p>
           <div className={styles.bigButtonHolder}><a onClick={calendlyPopUp} href="#" className="global-button"><i className="fa fa-send-o fa-fw" aria-hidden="true"></i>Request Demo</a></div>
           {/* <div className={styles.otherButtonHolder}>
             <Link activeClassName="activePage" to="/crm" className="global-button"><img src={crmIcon} alt="CRM" />Discover our CRM Features</Link>

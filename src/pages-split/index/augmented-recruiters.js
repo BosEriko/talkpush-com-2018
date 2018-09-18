@@ -29,11 +29,26 @@ class AugmentedRecruitersIndexPageSplit extends React.Component {
     let testimonialSection = document.getElementById('testimonial-section')
     let testimonialSectionDivideItems = document.getElementsByClassName('testimonial-section-divide-item')
     let testimonialSectionDivideItemWidth = document.getElementById('testimonial-section-divide').offsetWidth / 3
+    let testimonialSectionDivide = document.getElementById('testimonial-section-divide')
     if (window.innerWidth >= 961 && typeof (testimonialSection) != 'undefined' && testimonialSection != null) {
       Array.from(testimonialSectionDivideItems).forEach(item => {
         item.style.width = testimonialSectionDivideItemWidth + "px"
       })
     }
+    testimonialSectionDivide.addEventListener("scroll", () => {
+      let factor = testimonialSectionDivide.scrollLeft / (testimonialSectionDivide.scrollWidth - testimonialSectionDivide.offsetWidth);
+      if(factor < 0.2) {
+        let move = testimonialSectionDivide.lastChild;
+        move.remove();
+        testimonialSectionDivide.prepend(move);
+        testimonialSectionDivide.scrollLeft += move.offsetWidth;
+      } else if(factor > 0.9) {
+        let move = testimonialSectionDivide.firstChild;
+        move.remove();
+        testimonialSectionDivide.append(move);
+        testimonialSectionDivide.scrollLeft -= move.offsetWidth;
+      }
+    });
   }
   render() {
     return (
