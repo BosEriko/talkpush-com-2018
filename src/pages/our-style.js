@@ -44,7 +44,7 @@ const OurStylePage = ({ siteTitle }) => (
           </div>
         </div>
         <div className={styles.blockContentVideoHolder}>
-          <h2 className="global-hero-glow-green m-0 p-0">A word from our Founder</h2>
+          <h2 className="global-hero-glow-green m-0 p-0">A word from Max</h2>
           <div className={styles.blockContentVideoHolderVideo}>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/gNISmYgHKC4" frameBorder="0" allowFullScreen></iframe>
           </div>
