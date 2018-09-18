@@ -63,7 +63,7 @@ class Navigation extends React.Component {
               <li><Link activeClassName="activePage" to="/gallery"><img src={galleryIcon} alt="Gallery" />Gallery</Link></li>
             </ul>
           </li>
-          <li><Link activeClassName="activePage" to="/jobs">Career</Link></li>
+          {/* <li><Link activeClassName="activePage" to="/jobs">Career</Link></li> */}
           <li><Link activeClassName="activePage" to="/customers">Customers</Link></li>
           <li>
             <span id="servicesDropdownToggle">Services<i className="fa fa-angle-down" aria-hidden="true"></i></span>
