@@ -9,7 +9,7 @@ import automatedIcon from './images/impact-the-numbers/automated.svg'
 
 const ImpactTheNumbersIndexPageSplit = () => (
   <div className={styles.block}>
-    <div className={styles.blockFilter}>
+    <div className={styles.blockFilter} style={{ paddingTop: 0 }}>
       <div className="container">
         <h2 className="global-hero-glow-white m-0 p-0">Impact the numbers that matter</h2>
         <h4 className="p-0">Meet your candidates where they live and create engaging digital recruitment experiences</h4>
