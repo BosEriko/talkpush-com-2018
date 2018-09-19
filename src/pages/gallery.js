@@ -52,9 +52,9 @@ class GalleryPage extends React.Component {
           <a href="#" onClick={this.openModal}>
             <h3 className="m-0 p-0">{name}</h3>
           </a>
-          <div className={styles.blockContentGalleryRowItemNameHeart}>
+          {/* <div className={styles.blockContentGalleryRowItemNameHeart}>
             <img src={heartIcon} alt="Heart Icon" />
-          </div>
+          </div> */}
         </div>
         <p className={styles.blockContentGalleryRowItemDescription}>{description}</p>
       </li>
@@ -77,9 +77,9 @@ class GalleryPage extends React.Component {
             <div className={styles.blockContentMenuSearch}>
               <ul className="m-0 p-0">
                 <li className="m-0 p-0"><a href="#" style={this.pageVariables.activeLink}>Our Team</a></li>
-                <li className="m-0 p-0"><a href="#">Our Events</a></li>
+                {/* <li className="m-0 p-0"><a href="#">Our Events</a></li> */}
               </ul>
-              <input type="text" placeholder="Search" />
+              {/* <input type="text" placeholder="Search" /> */}
             </div>
             <div className={styles.blockContentGallery}>
               <ul className={styles.blockContentGalleryRow}>
