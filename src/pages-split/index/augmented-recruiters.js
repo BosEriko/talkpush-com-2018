@@ -3,6 +3,12 @@ import styles from './style/augmented-recruiters.module.scss'
 import userIcon from './images/augmented-recruiters/user.svg'
 
 class AugmentedRecruitersIndexPageSplit extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      animationWorking: true,
+    }
+  }
   quoteBlock(videoID, message, name, position, company) {
     return (
       <li className="testimonial-section-divide-item">
@@ -49,11 +55,8 @@ class AugmentedRecruitersIndexPageSplit extends React.Component {
         testimonialSectionDivide.scrollLeft -= move.offsetWidth;
       }
     });
-    testimonialSectionDivide.addEventListener("mouseover", () => {
-
-    });
     setInterval(() => {
-      testimonialScroll(1);
+      if(this.state.animationWorking) testimonialScroll(1);
     }, 5000);
     let testimonialScroll = (speed) => {
       let animateFinishLine = 0;
@@ -73,7 +76,7 @@ class AugmentedRecruitersIndexPageSplit extends React.Component {
         <div className="container">
           <h2 className="global-hero-glow-white m-0 p-0">Meet the Augmented Recruiters</h2>
           <h4 className="p-0">They build more engaging experiences and increase recruitment outputs through automation and AI</h4>
-          <ul className={styles.blockDivide} id="testimonial-section-divide">
+          <ul className={styles.blockDivide} id="testimonial-section-divide" onMouseOver={() => this.setState({ animationWorking: false })} onMouseOut={() => this.setState({ animationWorking: true })}>
 
             {this.quoteBlock("ciSB3gMpH_g", "With Talkpush, our hire rate has gone up considerably and we are able to handle much more volume with our existing team.", "Marvin Vinluan", "Director / Strategic Sourcing / Recruitment Marketing", "Alorica")}
             {this.quoteBlock("abg2U9DuAiA", "I love Talkpush because it allows access to multiple sourcing channels in one platform.", "Ping Sta. Catalina", "Client Services Manager", "Alexander Mann Solutions")}
