@@ -27,6 +27,18 @@ import _247Neon from '../pages-images/customers/247/neon.svg'
 import _247Black from '../pages-images/customers/247/black.svg'
 import valorglobalNeon from '../pages-images/customers/valorglobal/neon.svg'
 import valorglobalBlack from '../pages-images/customers/valorglobal/black.svg'
+import accentureNeon from '../pages-images/customers/accenture/neon.png'
+import accentureBlack from '../pages-images/customers/accenture/black.png'
+import teleperformanceNeon from '../pages-images/customers/teleperformance/neon.png'
+import teleperformanceBlack from '../pages-images/customers/teleperformance/black.png'
+import aiaNeon from '../pages-images/customers/aia/neon.png'
+import aiaBlack from '../pages-images/customers/aia/black.png'
+import adeccoNeon from '../pages-images/customers/adecco/neon.png'
+import adeccoBlack from '../pages-images/customers/adecco/black.png'
+import walmartNeon from '../pages-images/customers/walmart/neon.png'
+import walmartBlack from '../pages-images/customers/walmart/black.png'
+import amazonNeon from '../pages-images/customers/amazon/neon.png'
+import amazonBlack from '../pages-images/customers/amazon/black.png'
 
 class CustomersPage extends React.Component {
   pageVariables = {
@@ -111,6 +123,12 @@ class CustomersPage extends React.Component {
               {this.blockItem("exl", exlNeon, exlBlack, "EXL", "Philippines", false, false)}
               {this.blockItem("247", _247Neon, _247Black, "[24]7.ai", "Philippines", "Vpu8HkBHShw", false)}
               {this.blockItem("valorglobal", valorglobalNeon, valorglobalBlack, "Valor Global", "Costa Rica", "_swxOnvC0go", false)}
+              {this.blockItem("accenture", accentureNeon, accentureBlack, "Accenture", "Global", false, false)}
+              {this.blockItem("teleperformance", teleperformanceNeon, teleperformanceBlack, "Teleperformance", "Global", false, false)}
+              {this.blockItem("aia", aiaNeon, aiaBlack, "AIA", "Global", false, false)}
+              {this.blockItem("adecco", adeccoNeon, adeccoBlack, "Adecco", "Global", false, false)}
+              {this.blockItem("walmart", walmartNeon, walmartBlack, "Walmart", "Global", false, false)}
+              {this.blockItem("amazon", amazonNeon, amazonBlack, "Amazon", "Global", false, false)}
             </div>
           </div>
         </div>
