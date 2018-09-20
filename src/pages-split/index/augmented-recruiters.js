@@ -49,6 +49,23 @@ class AugmentedRecruitersIndexPageSplit extends React.Component {
         testimonialSectionDivide.scrollLeft -= move.offsetWidth;
       }
     });
+    testimonialSectionDivide.addEventListener("mouseover", () => {
+
+    });
+    setInterval(() => {
+      testimonialScroll(1);
+    }, 5000);
+    let testimonialScroll = (speed) => {
+      let animateFinishLine = 0;
+      let animate = setInterval(() => {
+        testimonialSectionDivide.scrollLeft++;
+        animateFinishLine++;
+        if((testimonialSectionDivide.offsetWidth / 3) <= animateFinishLine) animateStop();
+      }, speed);
+      let animateStop = () => {
+        clearInterval(animate);
+      }
+    }
   }
   render() {
     return (
