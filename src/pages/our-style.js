@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import styles from '../pages-style/our-style.module.scss'
 import phoneIcon from '../pages-images/our-style/phone-icon.svg'
+import talentIcon from '../pages-images/our-style/talent-icon.png'
 import cultureIcon from '../pages-images/our-style/culture-icon.svg'
 import joinIcon from '../pages-images/our-style/join-icon.svg'
 
@@ -24,7 +25,7 @@ const OurStylePage = ({ siteTitle }) => (
       <div className="container">
         <div className={styles.blockContentDivider}>
           <div className={styles.blockContentDividerLeft}>
-            <img src={phoneIcon} alt="Phone" />
+            <img src={talentIcon} alt="Talent" />
           </div>
           <div className={styles.blockContentDividerRight}>
             <h2 className="global-hero-glow-green m-0 p-0">The world is our talent pool</h2>
