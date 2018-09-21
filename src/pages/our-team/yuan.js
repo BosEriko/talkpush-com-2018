@@ -35,7 +35,7 @@ const OurTeamPage = () => (
         </div>
         <div className={styles.blockVideoHolder}>
           <div className={styles.blockVideoHolderVideo}>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameBorder="0" allowFullScreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xuEFvv-ta4c" frameBorder="0" allowFullScreen></iframe>
           </div>
         </div>
         <div className={styles.blockExperiencesSpeech}>
