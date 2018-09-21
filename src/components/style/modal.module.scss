@@ -62,6 +62,55 @@
           }
         }
       }
+      &Image {
+        border-width: 2px;
+        border-style: solid;
+        border-color: $theme;
+        box-shadow: 0 0 10px $theme;
+        background-color: #000;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        img {
+          max-width: 100%;
+          vertical-align: bottom;
+        }
+        &Set {
+          overflow-x: scroll;
+          white-space: nowrap;
+          padding-bottom: 1rem;
+
+          &::-webkit-scrollbar {
+            height: 7.5px;
+            width: 75%;
+          }
+
+          &::-webkit-scrollbar-track {
+              background-color: rgba(255,255,255,.25);
+              border-radius: 10px;
+          }
+
+          &::-webkit-scrollbar-thumb {
+              background-color: $theme;
+              border-radius: 10px;
+          }
+
+          &Item{
+            display: inline-block;
+            border-width: 2px;
+            border-style: solid;
+            border-color: $theme;
+            box-shadow: 0 0 10px $theme;
+            text-decoration: none;
+            &:not(:last-child){
+              margin-right: 1rem;
+            }
+            img {
+              vertical-align: bottom;
+              height: 5rem;
+            }
+          }
+        }
+      }
     }
   }
 }

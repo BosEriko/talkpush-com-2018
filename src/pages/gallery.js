@@ -214,7 +214,11 @@ class GalleryPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      modalStatus: false
+      modalStatus: false,
+      modalGalleryImage: "",
+      modalGallerySet: {},
+      modalGalleryTitle: "",
+      modalGalleryDescription: ""
     }
   }
 
@@ -234,6 +238,10 @@ class GalleryPage extends React.Component {
     })
   }
 
+  changeImage = (image) => {
+    this.setState({ modalGalleryImage: image });
+  }
+
   pageVariables = {
     pageCode: 'gallery',
     pageDescription: 'Talkpush was built to give everyone a chance to let their talent talk. Removing barriers between job seekers and employers has been our mission from day one.',
@@ -244,9 +252,9 @@ class GalleryPage extends React.Component {
     pageTitle: 'Gallery',
   }
 
-  galleryItem = (image, name, description) => {
+  galleryItem = (image, name, description, imageSet) => {
     return (
-      <li className={styles.blockContentGalleryRowItem}>
+      <li className={styles.blockContentGalleryRowItem} onClick={() => this.setState({ modalGalleryImage: image, modalGallerySet: imageSet, modalGalleryTitle: name, modalGalleryDescription: description })}>
         <div className={styles.blockContentGalleryRowItemImage}>
           <a href="#" onClick={this.openModal}>
             <div style={{ backgroundImage: `url('${image}')` }}></div>
@@ -273,7 +281,7 @@ class GalleryPage extends React.Component {
           <meta name='description' content={this.pageVariables.pageDescription} />
           <meta property='og:description' content={this.pageVariables.pageDescription} />
         </Helmet>
-        {this.state.modalStatus ? <Modal closeModal={this.closeModal} type="gallery" maxWidth="800" title="Office Life" content="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." /> : null}
+        {this.state.modalStatus ? <Modal closeModal={this.closeModal} maxWidth="800" image={this.state.modalGalleryImage} imageSet={this.state.modalGallerySet} title={this.state.modalGalleryTitle} content={this.state.modalGalleryDescription } changeImage={this.changeImage} /> : null}
         <div className={styles.blockHeader}></div>
         <div className={styles.blockContent}>
           <div className="container">
@@ -287,18 +295,18 @@ class GalleryPage extends React.Component {
             </div>
             <div className={styles.blockContentGallery}>
               <ul className={styles.blockContentGalleryRow}>
-                {this.galleryItem(recHackFive[13], "Recruitment Hack 5", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod")}
+                {this.galleryItem(recHackFive[13], "Recruitment Hack 5", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod", recHackFive)}
                 <div className={styles.blockContentGalleryRowSpacing}></div>
-                {this.galleryItem(recHackSix[14], "Recruitment Hack 6", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod")}
+                {this.galleryItem(recHackSix[14], "Recruitment Hack 6", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod", recHackSix)}
                 <div className={styles.blockContentGalleryRowSpacing}></div>
-                {this.galleryItem(recHackSeven[5], "Recruitment Hack 7", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod")}
+                {this.galleryItem(recHackSeven[5], "Recruitment Hack 7", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod", recHackSeven)}
               </ul>
               <ul className={styles.blockContentGalleryRow}>
-                {this.galleryItem(talkpush2018AnnualOffsite[13], "Talkpush Annual Offsite 2018", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod")}
+                {this.galleryItem(talkpush2018AnnualOffsite[13], "Talkpush Annual Offsite 2018", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod", talkpush2018AnnualOffsite)}
                 <div className={styles.blockContentGalleryRowSpacing}></div>
-                {this.galleryItem(talkpushWorkshopOne[0], "Talkpush Workshop 1", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod")}
+                {this.galleryItem(talkpushWorkshopOne[0], "Talkpush Workshop 1", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod", talkpushWorkshopOne)}
                 <div className={styles.blockContentGalleryRowSpacing}></div>
-                {this.galleryItem(talkpushWorkshopTwo[7], "Talkpush Workshop 2", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod")}
+                {this.galleryItem(talkpushWorkshopTwo[7], "Talkpush Workshop 2", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod", talkpushWorkshopTwo)}
               </ul>
             </div>
             <div className={styles.blockContentJoin}>
