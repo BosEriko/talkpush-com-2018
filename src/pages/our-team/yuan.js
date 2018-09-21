@@ -7,14 +7,16 @@ import defaultPicture from '../../pages-images/our-team/default.png'
 
 const pageVariables = {
   pageCode: 'our-team-yuan',
+  pageTitle: 'Our Team',
   pageDescription: 'Talkpush was built to give everyone a chance to let their talent talk. Removing barriers between job seekers and employers has been our mission from day one.',
+  userName: "Yuan",
 }
 
 
-const OurTeamPage = () => (
+const OurTeamPage = ({ siteTitle }) => (
   <div className={styles.block}>
     <Helmet>
-      <title>{pageVariables.pageCode}</title>
+      <title>{pageVariables.pageTitle} ({pageVariables.userName}) - {siteTitle}</title>
       <meta name='description' content={pageVariables.pageDescription} />
       <meta property='og:description' content={pageVariables.pageDescription} />
     </Helmet>
