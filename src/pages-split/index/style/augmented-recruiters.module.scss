@@ -102,6 +102,11 @@
                     &Picture {
                         width: 3rem;
                         height: 3rem;
+                        overflow: hidden;
+                        border-width: 1px;
+                        border-style: solid;
+                        border-color: $theme;
+                        border-radius: 1000px;
                         img {
                             width: 100%;
                             height: 100%;
