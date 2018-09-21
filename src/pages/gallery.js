@@ -102,6 +102,113 @@ import talkpushWorkshopTwo013 from '../pages-images/gallery/albums/talkpush-work
 import talkpushWorkshopTwo014 from '../pages-images/gallery/albums/talkpush-workshop-2/014.jpg';
 import talkpushWorkshopTwo015 from '../pages-images/gallery/albums/talkpush-workshop-2/015.jpg';
 
+const recHackFive = [
+  recHackFive001,
+  recHackFive002,
+  recHackFive003,
+  recHackFive004,
+  recHackFive005,
+  recHackFive006,
+  recHackFive007,
+  recHackFive008,
+  recHackFive009,
+  recHackFive010,
+  recHackFive011,
+  recHackFive012,
+  recHackFive013,
+  recHackFive014,
+  recHackFive015
+]
+
+const recHackSix = [
+  recHackSix001,
+  recHackSix002,
+  recHackSix003,
+  recHackSix004,
+  recHackSix005,
+  recHackSix006,
+  recHackSix007,
+  recHackSix008,
+  recHackSix009,
+  recHackSix010,
+  recHackSix011,
+  recHackSix012,
+  recHackSix013,
+  recHackSix014,
+  recHackSix015
+]
+
+const recHackSeven = [
+  recHackSeven001,
+  recHackSeven002,
+  recHackSeven003,
+  recHackSeven004,
+  recHackSeven005,
+  recHackSeven006,
+  recHackSeven007,
+  recHackSeven008,
+  recHackSeven009,
+  recHackSeven010,
+  recHackSeven011,
+  recHackSeven012,
+  recHackSeven013,
+  recHackSeven014,
+  recHackSeven015
+]
+
+const talkpush2018AnnualOffsite = [
+  talkpush2018AnnualOffsite001,
+  talkpush2018AnnualOffsite002,
+  talkpush2018AnnualOffsite003,
+  talkpush2018AnnualOffsite004,
+  talkpush2018AnnualOffsite005,
+  talkpush2018AnnualOffsite006,
+  talkpush2018AnnualOffsite007,
+  talkpush2018AnnualOffsite008,
+  talkpush2018AnnualOffsite009,
+  talkpush2018AnnualOffsite010,
+  talkpush2018AnnualOffsite011,
+  talkpush2018AnnualOffsite012,
+  talkpush2018AnnualOffsite013,
+  talkpush2018AnnualOffsite014,
+  talkpush2018AnnualOffsite015
+]
+
+const talkpushWorkshopOne = [
+  talkpushWorkshopOne001,
+  talkpushWorkshopOne002,
+  talkpushWorkshopOne003,
+  talkpushWorkshopOne004,
+  talkpushWorkshopOne005,
+  talkpushWorkshopOne006,
+  talkpushWorkshopOne007,
+  talkpushWorkshopOne008,
+  talkpushWorkshopOne009,
+  talkpushWorkshopOne010,
+  talkpushWorkshopOne011,
+  talkpushWorkshopOne012,
+  talkpushWorkshopOne013,
+  talkpushWorkshopOne014,
+  talkpushWorkshopOne015
+]
+
+const talkpushWorkshopTwo = [
+  talkpushWorkshopTwo001,
+  talkpushWorkshopTwo002,
+  talkpushWorkshopTwo003,
+  talkpushWorkshopTwo004,
+  talkpushWorkshopTwo005,
+  talkpushWorkshopTwo006,
+  talkpushWorkshopTwo007,
+  talkpushWorkshopTwo008,
+  talkpushWorkshopTwo009,
+  talkpushWorkshopTwo010,
+  talkpushWorkshopTwo011,
+  talkpushWorkshopTwo012,
+  talkpushWorkshopTwo013,
+  talkpushWorkshopTwo014,
+  talkpushWorkshopTwo015
+]
 
 class GalleryPage extends React.Component {
   constructor(props) {
@@ -173,25 +280,25 @@ class GalleryPage extends React.Component {
             <h3 className="global-hero-glow-white m-0 p-0">Galleries</h3>
             <div className={styles.blockContentMenuSearch}>
               <ul className="m-0 p-0">
-                <li className="m-0 p-0"><a href="#" style={this.pageVariables.activeLink}>Our Team</a></li>
-                {/* <li className="m-0 p-0"><a href="#">Our Events</a></li> */}
+                {/* <li className="m-0 p-0"><a href="#" style={this.pageVariables.activeLink}>Our Team</a></li> */}
+                <li className="m-0 p-0"><a href="#" style={this.pageVariables.activeLink}>Our Events</a></li>
               </ul>
               {/* <input type="text" placeholder="Search" /> */}
             </div>
             <div className={styles.blockContentGallery}>
               <ul className={styles.blockContentGalleryRow}>
-                {this.galleryItem(recHackFive014, "Recruitment Hack 5", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod")}
+                {this.galleryItem(recHackFive[13], "Recruitment Hack 5", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod")}
                 <div className={styles.blockContentGalleryRowSpacing}></div>
-                {this.galleryItem(recHackSix005, "Recruitment Hack 6", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod")}
+                {this.galleryItem(recHackSix[14], "Recruitment Hack 6", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod")}
                 <div className={styles.blockContentGalleryRowSpacing}></div>
-                {this.galleryItem(recHackSeven006, "Recruitment Hack 7", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod")}
+                {this.galleryItem(recHackSeven[5], "Recruitment Hack 7", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod")}
               </ul>
               <ul className={styles.blockContentGalleryRow}>
-                {this.galleryItem(talkpush2018AnnualOffsite014, "Talkpush Annual Offsite 2018", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod")}
+                {this.galleryItem(talkpush2018AnnualOffsite[13], "Talkpush Annual Offsite 2018", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod")}
                 <div className={styles.blockContentGalleryRowSpacing}></div>
-                {this.galleryItem(talkpushWorkshopOne001, "Talkpush Workshop 1", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod")}
+                {this.galleryItem(talkpushWorkshopOne[0], "Talkpush Workshop 1", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod")}
                 <div className={styles.blockContentGalleryRowSpacing}></div>
-                {this.galleryItem(talkpushWorkshopTwo008, "Talkpush Workshop 2", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod")}
+                {this.galleryItem(talkpushWorkshopTwo[7], "Talkpush Workshop 2", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod")}
               </ul>
             </div>
             <div className={styles.blockContentJoin}>
