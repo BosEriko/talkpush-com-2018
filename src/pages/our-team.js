@@ -5,6 +5,8 @@ import defaultPicture from '../pages-images/our-team/default.png'
 import Link from 'gatsby-link'
 import Modal from '../components/modal'
 
+import yuanPicture from '../pages-images/our-team/people/yuan.jpeg'
+
 const pageVariables = {
   pageCode: 'our-team',
   pageDescription: 'Talkpush was built to give everyone a chance to let their talent talk. Removing barriers between job seekers and employers has been our mission from day one.',
@@ -57,18 +59,18 @@ class OurTeamPage extends React.Component {
         <div className={styles.blockHeader}></div>
         <div className={styles.blockExperiences}>
           <div className="container">
-            <h2 className="global-hero-glow-white m-0 p-0" style={{ textShadow: "0 0 20px #e800ff" }}>Our Experiences</h2>
+            <h2 className="global-hero-glow-white m-0 p-0" style={{ textShadow: "0 0 20px #e800ff" }}>Meet Yuan</h2>
             <div className={styles.blockExperiencesDivider}>
               <div className={styles.blockExperiencesDividerLeft}>
                 <div className={styles.blockExperiencesDividerLeftImage}>
-                  <img src={defaultPicture} alt="Yuan" />
+                  <img src={yuanPicture} alt="Yuan" />
                 </div>
               </div>
               <div className={styles.blockExperiencesDividerRight}>
-                <div className={styles.blockExperiencesDividerRightNamePosition}>
+                {/* <div className={styles.blockExperiencesDividerRightNamePosition}>
                   <h3 className="global-hero-glow-green m-0 p-0">Yuan Yim</h3>
                   <span>Head of Resource and Community</span>
-                </div>
+                </div> */}
                 <p className="m-0">I have always wanted to show people what it’s like to work for a company like ours and to share my experience of the start-up adventure, so I’ve put together this vlog, which I hope you’ll get some inspiration from and maybe even get you excited about exploring career opportunities at Talkpush.</p>
                 <div className={styles.blockExperiencesDividerRightReadMore}>
                   <Link to="/our-team/yuan" className="global-button text-lowercase">Read More</Link>

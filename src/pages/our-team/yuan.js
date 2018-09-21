@@ -4,6 +4,7 @@ import Link from 'gatsby-link'
 import styles from '../../pages-style/our-team.module.scss'
 import defaultPicture from '../../pages-images/our-team/default.png'
 // import heartIcon from '../../pages-images/our-team/heart.svg'
+import yuanPicture from '../../pages-images/our-team/people/yuan.jpeg'
 
 const pageVariables = {
   pageCode: 'our-team-yuan',
@@ -25,7 +26,7 @@ const OurTeamPage = ({ siteTitle }) => (
       <div className="container">
         <div className={styles.blockExperiencesUserDetails}>
           <div className={styles.blockExperiencesUserDetailsImage}>
-            <img src={defaultPicture} alt="Yuan Yim" />
+            <img src={yuanPicture} alt="Yuan Yim" />
           </div>
           <div className={styles.blockExperiencesUserDetailsData}>
             <h3 className="global-hero-green-glow p-0">Yuan Yim</h3>
