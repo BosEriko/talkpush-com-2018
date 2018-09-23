@@ -6,6 +6,7 @@ import Link from 'gatsby-link'
 import Modal from '../components/modal'
 
 import yuanPicture from '../pages-images/our-team/people/yuan.jpeg'
+import bosPicture from '../pages-images/our-team/people/bos.jpeg'
 
 const pageVariables = {
   pageCode: 'our-team',
@@ -18,6 +19,10 @@ class OurTeamPage extends React.Component {
     super(props);
     this.state = {
       modalStatus: false,
+      modalUserName: "",
+      modalUserTitle: "",
+      modalUserDescription: "",
+      modalUserImage: ""
     }
   }
   openModal = (e) => {
@@ -34,14 +39,14 @@ class OurTeamPage extends React.Component {
       modalStatus: false
     })
   }
-  RowItem = () => {
+  RowItem = ({ name, title, description, image }) => {
     return (
-      <div className={styles.blockTeamMembersRowItem}>
+      <div className={styles.blockTeamMembersRowItem} onClick={() => this.setState({ modalUserName: name, modalUserTitle: title, modalUserDescription: description, modalUserImage: image })}>
         <div className={styles.blockTeamMembersRowItemImage}>
-          <img src={defaultPicture} alt="Default" />
+          <img src={image} alt="Default" />
         </div>
-        <h4 className="m-0 p-0">Name of Employee</h4>
-        <span>Current Position</span>
+        <h4 className="m-0 p-0">{name}</h4>
+        <span>{title}</span>
         <a href="#" onClick={this.openModal} className="global-button text-lowercase">Read More</a>
       </div>
     )
@@ -55,7 +60,7 @@ class OurTeamPage extends React.Component {
           <meta name='description' content={pageVariables.pageDescription} />
           <meta property='og:description' content={pageVariables.pageDescription} />
         </Helmet>
-        {this.state.modalStatus && <Modal closeModal={this.closeModal} maxWidth="400" title={"title"} content={"content"} />}
+        {this.state.modalStatus && <Modal closeModal={this.closeModal} maxWidth="500" name={this.state.modalUserName} position={this.state.modalUserTitle} content={this.state.modalUserDescription} profilePicture={this.state.modalUserImage} />}
         <div className={styles.blockHeader}></div>
         <div className={styles.blockExperiences}>
           <div className="container">
@@ -84,14 +89,14 @@ class OurTeamPage extends React.Component {
             <h2 className="global-hero-glow-green m-0 p-0" style={{ textShadow: 'none' }}>Meet the team</h2>
             <div className={styles.blockTeamMembers}>
               <div className={styles.blockTeamMembersRow}>
-                <RowItem />
-                <RowItem />
-                <RowItem />
+                <RowItem name="Bos Eriko Reyes" title="Designer" image={bosPicture} description="Bos (aka Eriko) is our lead on UI and design. He is a self-taught programmer and designer who dropped out of college to pursue his passion in design and started his own freelance business at the tender age of 19. We are lucky to have this precocious genius leading our design efforts." />
+                <RowItem name="Bos Eriko Reyes" title="Designer" image={bosPicture} description="Bos (aka Eriko) is our lead on UI and design. He is a self-taught programmer and designer who dropped out of college to pursue his passion in design and started his own freelance business at the tender age of 19. We are lucky to have this precocious genius leading our design efforts." />
+                <RowItem name="Bos Eriko Reyes" title="Designer" image={bosPicture} description="Bos (aka Eriko) is our lead on UI and design. He is a self-taught programmer and designer who dropped out of college to pursue his passion in design and started his own freelance business at the tender age of 19. We are lucky to have this precocious genius leading our design efforts." />
               </div>
               <div className={styles.blockTeamMembersRow}>
-                <RowItem />
-                <RowItem />
-                <RowItem />
+                <RowItem name="Bos Eriko Reyes" title="Designer" image={bosPicture} description="Bos (aka Eriko) is our lead on UI and design. He is a self-taught programmer and designer who dropped out of college to pursue his passion in design and started his own freelance business at the tender age of 19. We are lucky to have this precocious genius leading our design efforts." />
+                <RowItem name="Bos Eriko Reyes" title="Designer" image={bosPicture} description="Bos (aka Eriko) is our lead on UI and design. He is a self-taught programmer and designer who dropped out of college to pursue his passion in design and started his own freelance business at the tender age of 19. We are lucky to have this precocious genius leading our design efforts." />
+                <RowItem name="Bos Eriko Reyes" title="Designer" image={bosPicture} description="Bos (aka Eriko) is our lead on UI and design. He is a self-taught programmer and designer who dropped out of college to pursue his passion in design and started his own freelance business at the tender age of 19. We are lucky to have this precocious genius leading our design efforts." />
               </div>
             </div>
           </div>
