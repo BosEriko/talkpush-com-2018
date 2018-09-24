@@ -5,6 +5,9 @@ import styles from '../../pages-style/our-team.module.scss'
 import defaultPicture from '../../pages-images/our-team/default.png'
 // import heartIcon from '../../pages-images/our-team/heart.svg'
 import yuanPicture from '../../pages-images/our-team/people/yuan.jpeg'
+import clarissePicture from '../pages-images/our-team/people/clarisse.jpeg'
+import sudPicture from '../pages-images/our-team/people/sud.jpeg'
+import arisPicture from '../pages-images/our-team/people/aris.jpeg'
 
 const pageVariables = {
   pageCode: 'our-team-yuan',
