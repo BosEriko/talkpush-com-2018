@@ -1,6 +1,8 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import styles from '../pages-style/crm.module.scss'
+import Link from 'gatsby-link'
+import joinIcon from '../pages-images/crm/join-icon.svg'
 import conversationsImage from '../pages-images/crm/conversations.png'
 import overFormsIcon from '../pages-images/crm/over-forms.svg'
 import talentTalkImage from '../pages-images/crm/talent-talk.png'
@@ -32,7 +34,7 @@ const crmItem = (reverse, photo, title, paragraph, icon, linkDestination, linkTe
   return (
     <div className={styles.blockContentItem} style={reverse === true ? { flexDirection: "row-reverse" } : null}>
       <div className={reverse === true ? styles.blockContentItemImageReverse : styles.blockContentItemImage}>
-        { photo ? <img src={photo} alt={title} /> : <div><iframe width="560" height="315" src="https://www.youtube.com/embed/eXChER-YIGk" frameBorder="0" allowFullScreen=""></iframe></div> }
+        {photo ? <img src={photo} alt={title} /> : <div><iframe width="560" height="315" src="https://www.youtube.com/embed/eXChER-YIGk" frameBorder="0" allowFullScreen=""></iframe></div>}
       </div>
       <div className={styles.blockContentItemDescription}>
         <div className={styles.blockContentItemDescriptionHero}>
@@ -46,7 +48,7 @@ const crmItem = (reverse, photo, title, paragraph, icon, linkDestination, linkTe
         <p className="m-0 p-0">{paragraph}</p>
         {linkText ?
           <div className={reverse === true ? styles.blockContentItemDescriptionLinkReverse : styles.blockContentItemDescriptionLink}>
-            <a onClick={calendly ? calendly : null} target={calendly ? null: "_blank" } className="global-button" href={linkDestination}>{linkText}</a>
+            <a onClick={calendly ? calendly : null} target={calendly ? null : "_blank"} className="global-button" href={linkDestination}>{linkText}</a>
           </div>
           : null}
       </div>
@@ -79,15 +81,25 @@ const CrmPage = ({ siteTitle }) => (
         {crmItem(false, chromeImage, "LinkedIn lead capture", "If your team spends time searching applicants online, whether it be on LinkedIn, Facebook Groups, or job boards like Indeed or Monster, they will love the Talkpush Chrome Plugin, from which they can add candidates to campaign in a fraction of the time.", chromeIcon, "https://chrome.google.com/webstore/detail/talkpush/hikdfefkfklgdnhgkdfdddeaicbgebbg?hl=en-US", "Download Here", false)}
         {crmItem(true, recordImage, "Record everything", "With Talkpush your recruiters can make & receive calls with all candidates at the click of a button, moving their conversation past Emails & SMS. With every call recorded and all activity tracked, Talkpush is a tool for you to improve your technique and drive productivity.", recordIcon, "#", false, false)}
         {crmItem(false, apiImage, "Integrated with your ATS", "If your team spends time searching applicants online, whether it be on LinkedIn, Facebook groups, or job boards like Indeed or Monster, they will love the Talkpush Chrome Plugin, from which they can add candidates to campaign in a fraction of the time.", false, "#", false, false)}
+        <div className={styles.blockContentJoin}>
+          <div className={styles.blockContentJoinIcon}>
+            <img src={joinIcon} alt="Join Us" />
+          </div>
+          <div className={styles.blockContentJoinDetails}>
+            <h3>Join our growing team</h3>
+            <p className="m-0 p-0">Join Talkpush and let's make recruitment fun together</p>
+            <Link to="/jobs">Careers</Link>
+          </div>
+        </div>
       </div>
     </div>
-    <div className={styles.blockCTA}>
+    {/* <div className={styles.blockCTA}>
       <h3 className="global-hero-glow-green m-0 p-0">Ready to get started?</h3>
       <a href="#" onClick={calendlyPopUp} className="global-button">
         <i className="fa fa-send-o fa-fw" aria-hidden="true"></i>
         <span>Request a Demo</span>
       </a>
-    </div>
+    </div> */}
   </div>
 )
 
