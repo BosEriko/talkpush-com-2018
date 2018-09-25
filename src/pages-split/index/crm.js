@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './style/crm.module.scss'
 import Link from 'gatsby-link'
 import crmIcon from '../../icons/crm-white.svg'
-import laptop from './images/crm/laptop.svg'
+import laptop from './images/crm/laptop.png'
 import mobile from './images/crm/mobile.svg'
 
 class CrmIndexPageSplit extends React.Component {
