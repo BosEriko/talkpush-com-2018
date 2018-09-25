@@ -35,7 +35,7 @@ const ImpactTheNumbersIndexPageSplit = () => (
             <h3 className="global-hero-glow-white m-0 p-0">35%</h3>
             <p className={styles.blockFilterDividerItemMessage}>Candidate satisfaction NPS</p>
             <div className={styles.blockFilterDividerItemBottom}>
-              <a href="https://www.youtube.com/watch?v=g4i0vKSu0f4" target="_blank" className="global-button text-lowercase">Case Study: Genpact</a>
+              <a href="https://www.youtube.com/watch?v=aXTAjF8T-Kg" target="_blank" className="global-button text-lowercase">Case Study: Genpact</a>
             </div>
           </div>
 

@@ -54,7 +54,7 @@ class AugmentedRecruitersIndexPageSplit extends React.Component {
         move.remove();
         testimonialSectionDivide.prepend(move);
         testimonialSectionDivide.scrollLeft += move.offsetWidth;
-      } else if(factor > 0.9) {
+      } else if(factor > 0.8) {
         let move = testimonialSectionDivide.firstChild;
         move.remove();
         testimonialSectionDivide.append(move);
