@@ -295,18 +295,18 @@ class GalleryPage extends React.Component {
             </div>
             <div className={styles.blockContentGallery}>
               <ul className={styles.blockContentGalleryRow}>
-                {this.galleryItem(recHackFive[13], "Recruitment Hack 5", "The 5th instalment of the Recruitment Hacks Series held last November 16th at Acclr8 Paseo Thank you to our Speakers, Panelists and everyone who joined us!", recHackFive)}
+                {this.galleryItem(recHackSeven[5], "August 17, 2018", "The recruitment hacks series launches its first event in LATAM, Held at WeWork last August 15th the event had guest speakers from Sykes, Manpower Group Mexico and Básico fm.", recHackSeven)}
                 <div className={styles.blockContentGalleryRowSpacing}></div>
-                {this.galleryItem(recHackSix[14], "Recruitment Hack 6", 'The 6th leg of the recruitment hacks series! with the theme of "Turning Talent into Ambassadors" Referral is the #1 source for candidates, both in quantity and quality.', recHackSix)}
+                {this.galleryItem(recHackSix[14], "June 7, 2018", 'The 6th leg of the recruitment hacks series! with the theme of "Turning Talent into Ambassadors" Referral is the #1 source for candidates, both in quantity and quality.', recHackSix)}
                 <div className={styles.blockContentGalleryRowSpacing}></div>
-                {this.galleryItem(recHackSeven[5], "Recruitment Hack 7", "The recruitment hacks series launches its first event in LATAM, Held at WeWork last August 15th the event had guest speakers from Sykes, Manpower Group Mexico and Básico fm.", recHackSeven)}
+                {this.galleryItem(talkpush2018AnnualOffsite[13], "Talkpush Annual Offsite 2018", "Yearly get together.", talkpush2018AnnualOffsite)}
               </ul>
               <ul className={styles.blockContentGalleryRow}>
-                {this.galleryItem(talkpush2018AnnualOffsite[13], "Talkpush Annual Offsite 2018", "Yearly get together.", talkpush2018AnnualOffsite)}
+                {this.galleryItem(recHackFive[13], "November 19, 2017", "The 5th instalment of the Recruitment Hacks Series held last November 16th at Acclr8 Paseo Thank you to our Speakers, Panelists and everyone who joined us!", recHackFive)}
                 <div className={styles.blockContentGalleryRowSpacing}></div>
-                {this.galleryItem(talkpushWorkshopOne[0], "Talkpush Workshop 1", "A fantastic turnout for our very first end user workshop! Many thanks to the Accler8 team and Kuppa coffee for supporting our event.", talkpushWorkshopOne)}
+                {this.galleryItem(talkpushWorkshopTwo[7], "September 13, 2017", "Second Talkpush workshop.", talkpushWorkshopTwo)}
                 <div className={styles.blockContentGalleryRowSpacing}></div>
-                {this.galleryItem(talkpushWorkshopTwo[7], "Talkpush Workshop 2", "Second Talkpush workshop.", talkpushWorkshopTwo)}
+                {this.galleryItem(talkpushWorkshopOne[0], "April 7, 2017", "A fantastic turnout for our very first end user workshop! Many thanks to the Accler8 team and Kuppa coffee for supporting our event.", talkpushWorkshopOne)}
               </ul>
             </div>
             <div className={styles.blockContentJoin}>
