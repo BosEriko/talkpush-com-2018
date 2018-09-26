@@ -111,6 +111,9 @@ class CustomersPage extends React.Component {
           <div className="container">
             <div className="divider">
               <div className="shadow" id="customer-shadow"></div>
+              {this.blockItem("accenture", accentureNeon, accentureBlack, "Accenture", "Global", false, false)}
+              {this.blockItem("adecco", adeccoNeon, adeccoBlack, "Adecco", "Global", false, false)}
+              {this.blockItem("aia", aiaNeon, aiaBlack, "AIA", "Global", false, false)}
               {this.blockItem("prudential", prudentialNeon, prudentialBlack, "The Real Life Company", "South East Asia", false, false)}
               {this.blockItem("starwood", starwoodNeon, starwoodBlack, "Starwood", "China", "nFRDqo_rc3o", false)}
               {this.blockItem("alexander", alexanderNeon, alexanderBlack, "Alexander Mann", "South East Asia", false, false)}
@@ -123,10 +126,7 @@ class CustomersPage extends React.Component {
               {this.blockItem("exl", exlNeon, exlBlack, "EXL", "Philippines", false, false)}
               {this.blockItem("247", _247Neon, _247Black, "[24]7.ai", "Philippines", "Vpu8HkBHShw", false)}
               {this.blockItem("valorglobal", valorglobalNeon, valorglobalBlack, "Valor Global", "Costa Rica", "_swxOnvC0go", false)}
-              {this.blockItem("accenture", accentureNeon, accentureBlack, "Accenture", "Global", false, false)}
               {this.blockItem("teleperformance", teleperformanceNeon, teleperformanceBlack, "Teleperformance", "Global", false, false)}
-              {this.blockItem("aia", aiaNeon, aiaBlack, "AIA", "Global", false, false)}
-              {this.blockItem("adecco", adeccoNeon, adeccoBlack, "Adecco", "Global", false, false)}
               {this.blockItem("walmart", walmartNeon, walmartBlack, "Walmart", "Global", false, false)}
               {this.blockItem("amazon", amazonNeon, amazonBlack, "Amazon", "Global", false, false)}
             </div>
