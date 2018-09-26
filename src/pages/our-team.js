@@ -14,6 +14,8 @@ import christinaPicture from '../pages-images/our-team/people/christina.jpeg'
 import noelPicture from '../pages-images/our-team/people/noel.jpeg'
 import qenPicture from '../pages-images/our-team/people/qen.jpeg'
 import arisPicture from '../pages-images/our-team/people/aris.jpeg'
+import lukasPicture from '../pages-images/our-team/people/lukas.jpeg'
+import rajPicture from '../pages-images/our-team/default.png'
 
 const pageVariables = {
   pageCode: 'our-team',
@@ -110,11 +112,11 @@ class OurTeamPage extends React.Component {
                 <RowItem name="Bos Eriko Reyes" title="Designer" image={bosPicture} description="Bos (aka Eriko) is our lead on UI and design. He is a self-taught programmer and designer who dropped out of college to pursue his passion in design and started his own freelance business at the tender age of 19. We are lucky to have this precocious genius leading our design efforts." />
                 <RowItem name="Noel Bacnis" title="Software Engineer" image={noelPicture} description="Noel is a graduate from the Far Eastern University where he specialized in mobile and web applications and developed a broad skillset in programming and design. Noel designs the web interface and user experiences to make the candidate journey more effortless." />
               </div>
-              {/* <div className={styles.blockTeamMembersRow}>
-                <RowItem name="Raj Baruah" title="VP for Growth" image={defaultPicture} description="Raj has been in the Sales industry for over 15 years, He has previously worked for Adobe, Iyogi and most recently Wingfy, He is highly experienced in B2B Sales for SaaS. Raj’s dream is to transform Talkpush into a billion dollar company that is admired globally. He believes that if a team that is treated well, treats our customers even better." />
-                <RowItem name="Lukas Beifreund" title="Product Manager" image={defaultPicture} description="Lukas speaks fluently 4 languages and has lived just about everywhere on the planet. He joined the Customer success team in early 2017 and helped to automate some of the tam’s activity with smart script. He was promoted to Product Manager a year later, where his roles is to define the product roadmap and vision and create better experiences for recruiters and candidates alike." />
+              <div className={styles.blockTeamMembersRow}>
+                <RowItem name="Lukas Beifreund" title="Product Manager" image={lukasPicture} description="Lukas speaks fluently 4 languages and has lived just about everywhere on the planet. He joined the Customer success team in early 2017 and helped to automate some of the tam’s activity with smart script. He was promoted to Product Manager later that year, where his roles is to define the product roadmap and vision and create better experiences for recruiters and candidates alike." />
+                <RowItem name="Raj Baruah" title="VP for Growth" image={rajPicture} description="Raj has been in the Sales industry for over 15 years, He has previously worked for Adobe, Iyogi and most recently Wingfy, He is highly experienced in B2B Sales for SaaS. Raj’s dream is to transform Talkpush into a billion dollar company that is admired globally. He believes that if a team that is treated well, treats our customers even better." />
                 <div style={{ flex: "1" }}></div>
-              </div> */}
+              </div>
             </div>
           </div>
         </div>
