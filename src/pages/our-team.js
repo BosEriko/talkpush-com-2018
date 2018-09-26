@@ -52,7 +52,7 @@ class OurTeamPage extends React.Component {
     return (
       <div className={styles.blockTeamMembersRowItem} onClick={() => this.setState({ modalUserName: name, modalUserTitle: title, modalUserDescription: description, modalUserImage: image })}>
         <div className={styles.blockTeamMembersRowItemImage}>
-          <img src={image} alt="Default" onClick={this.openModal} style={{ cursor: "pointer" }} />
+          <img src={image} alt="Default" onClick={this.openModal} />
         </div>
         <h4 className="m-0 p-0">{name}</h4>
         <span>{title}</span>
